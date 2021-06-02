@@ -1,0 +1,13 @@
+    .btn {
+        border-radius: 35px;
+        height: 60px;
+    }
+    
+    . header__btn {
+        width: 280px;
+        height: 60px;
+    }
+    
+    .btn--green {
+        background-color: green;
+    }
