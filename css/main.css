@@ -1,13 +1,155 @@
-    .btn {
-        border-radius: 35px;
-        height: 60px;
-    }
-    
-    . header__btn {
-        width: 280px;
-        height: 60px;
-    }
-    
-    .btn--green {
-        background-color: green;
-    }
+                @font-face {
+                    font-family: "Muli-Regular";
+                    src: url(../assets/fonts/Muli-Regular.woff) format('woff');
+                }
+                
+                @font-face {
+                    font-family: "Muli-Bold";
+                    src: url(../assets/fonts/Muli-Bold.ttf) format('ttf');
+                    font-weight: bold;
+                }
+                
+                @font-face {
+                    font-family: "Muli-BoldItalic";
+                    src: url(../assets/fonts/Muli-BoldItalic.ttf) format('ttf');
+                    font-weight: bold;
+                    font-style: italic;
+                }
+                
+                @font-face {
+                    font-family: "Muli-ExtraBold";
+                    src: url(../assets/fonts/Muli-ExtraBold.woff) format('woff');
+                    font-weight: bold;
+                }
+                
+                @font-face {
+                    font-family: "Muli-Italic";
+                    src: url(../assets/fonts/Muli-Italic.ttf) format('ttf');
+                    font-style: italic;
+                }
+                
+                @font-face {
+                    font-family: "Muli-Semi-BoldItalic";
+                    src: url(../assets/fonts/Muli-Semi-BoldItalic.ttf)format('ttf');
+                    font-style: italic;
+                    font-weight: bold;
+                }
+                
+                .header {
+                    background: url(../img/header/big-img.jpg) no-repeat center center/cover;
+                    min-height: 100vh;
+                    width: 100%;
+                }
+                
+                .header__menu {
+                    margin-top: 97px;
+                }
+                
+                .menu__list {
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    color: #ffffff;
+                    line-height: 40px;
+                    margin-right: 34px;
+                }
+                
+                .menu-link {
+                    text-decoration: none;
+                }
+                /* .menu__item {} */
+                /* .personal__counter {
+                    color: white;
+                } */
+                
+                .btn {
+                    border-radius: 35px;
+                    height: 60px;
+                    font-size: 21px;
+                    font-family: "Muli-ExtraBold";
+                    font-weight: bold;
+                    color: white;
+                }
+                
+                .header__btn {
+                    width: 280px;
+                    height: 70px;
+                    font-size: 24px;
+                    line-height: 40px;
+                    margin-top: 110px;
+                    margin-bottom: 100px;
+                }
+                
+                .btn--green {
+                    background-color: green;
+                    /* margin-top: 110px; */
+                }
+                
+                .personal__list {
+                    margin-right: 45px;
+                    margin-top: 97px;
+                }
+                
+                .header-heading {
+                    color: rgb(53, 13, 199);
+                    font-size: 80px;
+                    line-height: 65px;
+                }
+                
+                .smoothies {
+                    min-height: 1080px;
+                    max-width: 1920px;
+                }
+                
+                .title {
+                    font-family: "Muli-ExtraBold";
+                    color: #f7ae3b;
+                    font-weight: bold;
+                    font-size: 50px;
+                }
+                
+                .smoothies__title {
+                    color: #f7ae3b;
+                    margin-top: 97px;
+                    margin-bottom: 50px;
+                }
+                /* .text {} */
+                /* .smoothies__card {} */
+                
+                .smoothies__wrapper {
+                    width: 190px;
+                }
+                
+                .smoothies__text {
+                    width: 915px;
+                    margin-bottom: 90px;
+                }
+                
+                .smoothies__heading {
+                    color: #f2612d;
+                }
+                
+                .about__wrapper {
+                    background-color: #127f70;
+                }
+                
+                .about__title {
+                    color: #ffffff;
+                    font-size: 55px;
+                    line-height: 60px;
+                    /* width: 585px;
+                    height: 976px; */
+                }
+                
+                .about__btn {
+                    text-decoration: none;
+                    width: 380px;
+                    height: 60px;
+                }
+                
+                .footer__content {
+                    background: #f6ad38;
+                }
+                
+                .footer__row {
+                    background: #6d2c1b;
+                }

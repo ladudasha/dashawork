@@ -30,16 +30,19 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body {
-    /* font-family: ; */
+    font-family: Muli-Regular;
+    font-size: 18px;
+    line-height: 35px;
     color: #000;
 }
 
 a,
 button {
-    font-family: inherit;
+    /* font-family: inherit; */
     color: inherit;
 }
 
