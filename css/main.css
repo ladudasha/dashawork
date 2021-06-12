@@ -1,155 +1,402 @@
-                @font-face {
-                    font-family: "Muli-Regular";
-                    src: url(../assets/fonts/Muli-Regular.woff) format('woff');
-                }
-                
-                @font-face {
-                    font-family: "Muli-Bold";
-                    src: url(../assets/fonts/Muli-Bold.ttf) format('ttf');
-                    font-weight: bold;
-                }
-                
-                @font-face {
-                    font-family: "Muli-BoldItalic";
-                    src: url(../assets/fonts/Muli-BoldItalic.ttf) format('ttf');
-                    font-weight: bold;
-                    font-style: italic;
-                }
-                
-                @font-face {
-                    font-family: "Muli-ExtraBold";
-                    src: url(../assets/fonts/Muli-ExtraBold.woff) format('woff');
-                    font-weight: bold;
-                }
-                
-                @font-face {
-                    font-family: "Muli-Italic";
-                    src: url(../assets/fonts/Muli-Italic.ttf) format('ttf');
-                    font-style: italic;
-                }
-                
-                @font-face {
-                    font-family: "Muli-Semi-BoldItalic";
-                    src: url(../assets/fonts/Muli-Semi-BoldItalic.ttf)format('ttf');
-                    font-style: italic;
-                    font-weight: bold;
-                }
-                
-                .header {
-                    background: url(../img/header/big-img.jpg) no-repeat center center/cover;
-                    min-height: 100vh;
-                    width: 100%;
-                }
-                
-                .header__menu {
-                    margin-top: 97px;
-                }
-                
-                .menu__list {
-                    text-transform: uppercase;
-                    font-size: 16px;
-                    color: #ffffff;
-                    line-height: 40px;
-                    margin-right: 34px;
-                }
-                
-                .menu-link {
-                    text-decoration: none;
-                }
-                /* .menu__item {} */
-                /* .personal__counter {
-                    color: white;
-                } */
-                
-                .btn {
-                    border-radius: 35px;
-                    height: 60px;
-                    font-size: 21px;
-                    font-family: "Muli-ExtraBold";
-                    font-weight: bold;
-                    color: white;
-                }
-                
-                .header__btn {
-                    width: 280px;
-                    height: 70px;
-                    font-size: 24px;
-                    line-height: 40px;
-                    margin-top: 110px;
-                    margin-bottom: 100px;
-                }
-                
-                .btn--green {
-                    background-color: green;
-                    /* margin-top: 110px; */
-                }
-                
-                .personal__list {
-                    margin-right: 45px;
-                    margin-top: 97px;
-                }
-                
-                .header-heading {
-                    color: rgb(53, 13, 199);
-                    font-size: 80px;
-                    line-height: 65px;
-                }
-                
-                .smoothies {
-                    min-height: 1080px;
-                    max-width: 1920px;
-                }
-                
-                .title {
-                    font-family: "Muli-ExtraBold";
-                    color: #f7ae3b;
-                    font-weight: bold;
-                    font-size: 50px;
-                }
-                
-                .smoothies__title {
-                    color: #f7ae3b;
-                    margin-top: 97px;
-                    margin-bottom: 50px;
-                }
-                /* .text {} */
-                /* .smoothies__card {} */
-                
-                .smoothies__wrapper {
-                    width: 190px;
-                }
-                
-                .smoothies__text {
-                    width: 915px;
-                    margin-bottom: 90px;
-                }
-                
-                .smoothies__heading {
-                    color: #f2612d;
-                }
-                
-                .about__wrapper {
-                    background-color: #127f70;
-                }
-                
-                .about__title {
-                    color: #ffffff;
-                    font-size: 55px;
-                    line-height: 60px;
-                    /* width: 585px;
-                    height: 976px; */
-                }
-                
-                .about__btn {
-                    text-decoration: none;
-                    width: 380px;
-                    height: 60px;
-                }
-                
-                .footer__content {
-                    background: #f6ad38;
-                }
-                
-                .footer__row {
-                    background: #6d2c1b;
-                }
+        @font-face {
+            font-family: "Muli-Regular";
+            src: url(../assets/fonts/Muli-Regular.woff) format('woff');
+        }
+        
+        @font-face {
+            font-family: "Muli-Bold";
+            src: url(../assets/fonts/Muli-Bold.ttf) format('ttf');
+            font-weight: bold;
+        }
+        
+        @font-face {
+            font-family: "Muli-BoldItalic";
+            src: url(../assets/fonts/Muli-BoldItalic.ttf) format('ttf');
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        @font-face {
+            font-family: "Muli-ExtraBold";
+            src: url(../assets/fonts/Muli-ExtraBold.woff) format('woff');
+            font-weight: bold;
+        }
+        
+        @font-face {
+            font-family: "Muli-Italic";
+            src: url(../assets/fonts/Muli-Italic.ttf) format('ttf');
+            font-style: italic;
+        }
+        
+        @font-face {
+            font-family: "Muli-Semi-BoldItalic";
+            src: url(../assets/fonts/Muli-Semi-BoldItalic.ttf)format('ttf');
+            font-style: italic;
+            font-weight: bold;
+        }
+        
+        .header {
+            background-image: url(../img/header/big-img.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            background-repeat: no-repeat;
+        }
+        
+        .container {
+            max-width: 1700px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+        
+        .header__top {
+            padding: 70px 0 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .menu__list {
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #ffffff;
+            line-height: 40px;
+            display: flex;
+        }
+        
+        .menu__item {
+            margin-right: 35px;
+        }
+        
+        .menu__item:last-child {
+            margin-right: 0;
+        }
+        
+        .menu-link {
+            text-decoration: none;
+            font-family: 'Muli-Bold', sans-serif;
+        }
+        
+        .header__right-block {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header__personal {
+            margin-right: 135px;
+        }
+        
+        .personal__list {
+            display: flex;
+        }
+        
+        .personal__list-item {
+            margin-right: 45px;
+        }
+        
+        .personal__counter {
+            border-radius: 50%;
+            position: absolute;
+            left: inherit;
+            top: inherit;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .social__list {
+            display: flex;
+        }
+        
+        .social__list-item {
+            height: 35px;
+            max-width: 35px;
+            min-width: 35px;
+            border-radius: 50%;
+            background-color: white;
+            text-align: center;
+            margin-right: 10px;
+        }
+        
+        .social__img {
+            position: relative;
+            top: 6%;
+        }
+        
+        .header__content {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn {
+            border-radius: 35px;
+            height: 60px;
+            font-size: 21px;
+            font-family: "Muli-ExtraBold";
+            font-weight: bold;
+            color: white;
+        }
+        
+        .header__btn {
+            width: 280px;
+            height: 70px;
+            font-size: 24px;
+            line-height: 40px;
+            margin-top: 110px;
+            margin-bottom: 100px;
+        }
+        
+        .btn--green {
+            background-color: green;
+            /* margin-top: 110px; */
+        }
+        
+        .header-heading {
+            color: #000000;
+            font-size: 95px;
+            line-height: 95px;
+            text-align: center;
+            margin-top: 190px;
+        }
+        
+        .smoothies {
+            min-height: 1080px;
+            margin: 0 auto;
+        }
+        
+        .title {
+            font-family: "Muli-ExtraBold";
+            color: #f7ae3b;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        
+        .smoothies__title {
+            color: #f7ae3b;
+            margin-top: 97px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .smoothies__text {
+            width: 915px;
+            margin-bottom: 90px;
+            text-align: center;
+            margin: 0 auto 60px;
+        }
+        
+        .smoothies__wrapper {
+            display: flex;
+            justify-content: center;
+            max-width: 980px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 auto;
+            flex: 1 0 25%;
+        }
+        
+        .smoothies__card {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            width: 230px;
+            height: 180px;
+        }
+        
+        .smoothies__heading {
+            color: #f2612d;
+            padding-top: 27px;
+        }
+        
+        .about__wrapper {
+            background-color: #127f70;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .about__text {
+            margin-left: 120px;
+        }
+        
+        .about__title {
+            color: #ffffff;
+            font-size: 55px;
+            line-height: 60px;
+            max-width: 644px;
+            padding: 100px 0 0 0;
+        }
+        
+        .about__list {
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+        
+        .about__btn {
+            border: 2px solid #f8b231;
+            background: #127f70;
+            text-decoration: none;
+            width: 380px;
+            height: 60px;
+            display: inline-block;
+            font-size: 21px;
+            line-height: 22px;
+            text-align: center;
+        }
+        
+        .btn--white {
+            border: 2px solid #e34761;
+        }
+        
+        .products__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .products__box {
+            display: flex;
+            width: 480px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+            padding: 129px 0 77px;
+        }
+        
+        .products__heading {
+            padding-top: 35px;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+        
+        .products__box--red {
+            background-color: #672a15;
+        }
+        
+        .products__box--green {
+            background-color: #198674;
+        }
+        
+        .products__box--yellow {
+            background-color: #f7af3a;
+        }
+        
+        .products__box--orange {
+            background-color: #bf4c1c;
+        }
+        
+        .products__btn {
+            text-align: center;
+            width: 198px;
+            display: inline-block;
+        }
+        
+        .story {
+            min-height: 882px;
+            max-width: 1720px;
+            margin: 0 auto;
+        }
+        
+        .story__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 120px;
+        }
+        
+        .story__content {
+            margin-right: 200px;
+        }
+        
+        .story__title {
+            padding-bottom: 45px;
+        }
+        
+        .story__text {
+            width: 520px;
+            padding-bottom: 56px;
+        }
+        
+        .testimonials {
+            background-color: #632d1b;
+            padding: 117px 0 80px;
+        }
+        
+        .testimonials__excerpt {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .testimonials__santa {
+            color: red;
+        }
+        
+        .testimonials__wrap {
+            align-items: center;
+            max-width: 500px;
+        }
+        
+        .testimonials__title {
+            text-align: center;
+            position: relative;
+        }
+        
+        .blog {
+            padding: 100px 0;
+        }
+        
+        .blog__wrapp {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .blog__title {
+            margin-bottom: 53px;
+        }
+        
+        .blog__heading {
+            color: #f2612d;
+            margin-left: 61px;
+        }
+        
+        .blog__date {
+            margin-left: 61px;
+        }
+        
+        .blog__content {
+            margin-left: 200px;
+        }
+        
+        .blog__text {
+            padding-left: 129px;
+        }
+        
+        .instagram {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .instagram__wrapper {
+            display: flex;
+        }
+        
+        .instagram__card {
+            width: 100%;
+            flex-grow: 1;
+        }
+        
+        .instagram__img {
+            flex-grow: 1;
+        }
+        
+        .footer__content {
+            background: #f6ad38;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer__row {
+            background: #6d2c1b;
+        }

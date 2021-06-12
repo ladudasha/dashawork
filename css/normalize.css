@@ -33,6 +33,10 @@ html {
     border: 1px solid red;
 }
 
+ul {
+    list-style: none;
+}
+
 body {
     font-family: Muli-Regular;
     font-size: 18px;
