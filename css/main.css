@@ -160,7 +160,7 @@
         }
         
         .smoothies {
-            min-height: 1080px;
+            min-height: 870px;
             margin: 0 auto;
         }
         
@@ -242,6 +242,7 @@
             font-size: 21px;
             line-height: 22px;
             text-align: center;
+            padding: 18px 91px 15px 30px;
         }
         
         .btn--white {
@@ -260,13 +261,13 @@
             flex-direction: column;
             justify-content: center;
             flex-grow: 1;
-            padding: 129px 0 77px;
+            padding: 125px 0 80px;
         }
         
         .products__heading {
-            padding-top: 35px;
+            padding: 35px 0 60px;
             text-align: center;
-            padding-bottom: 60px;
+            color: white;
         }
         
         .products__box--red {
@@ -289,11 +290,14 @@
             text-align: center;
             width: 198px;
             display: inline-block;
+            text-decoration: none;
+            padding: 20px 128px 15px 33px;
+            line-height: 22px;
+            border: 2px solid #ffffff;
         }
         
         .story {
             min-height: 882px;
-            max-width: 1720px;
             margin: 0 auto;
         }
         
@@ -313,8 +317,18 @@
         }
         
         .story__text {
-            width: 520px;
+            width: 510px;
             padding-bottom: 56px;
+            font-weight: bold;
+        }
+        
+        .story__btn {
+            padding: 21px 143px 23px 29px;
+            display: inline-block;
+            width: 302px;
+            text-decoration: none;
+            line-height: 15px;
+            background-color: #0aa566;
         }
         
         .testimonials {
@@ -333,18 +347,45 @@
             color: red;
         }
         
+        .testimonials__avatar {
+            padding-left: 55px;
+        }
+        
+        .arrows {
+            text-align: center;
+            padding-top: 140px;
+        }
+        
         .testimonials__wrap {
             align-items: center;
-            max-width: 500px;
+            max-width: 455px;
+        }
+        
+        .testimonials__blockquote {
+            color: #ffffff;
+            text-align: center;
+            padding-bottom: 31px;
+        }
+        
+        .testimonials__santa {
+            padding: 0 125px;
+            color: #f7ae3b;
         }
         
         .testimonials__title {
             text-align: center;
             position: relative;
+            padding-bottom: 128px;
+        }
+        
+        .testimonials__love {
+            text-transform: uppercase;
+            color: #f2612d;
         }
         
         .blog {
-            padding: 100px 0;
+            min-height: 797px;
+            padding: 94px 0 196px;
         }
         
         .blog__wrapp {
@@ -353,29 +394,42 @@
         }
         
         .blog__title {
-            margin-bottom: 53px;
+            margin-bottom: 48px;
+        }
+        
+        .blog__content {
+            max-width: 603px;
+            padding: 185px 0 0 0;
         }
         
         .blog__heading {
             color: #f2612d;
-            margin-left: 61px;
+            margin-left: 60px;
         }
         
         .blog__date {
-            margin-left: 61px;
-        }
-        
-        .blog__content {
-            margin-left: 200px;
+            margin-left: 60px;
         }
         
         .blog__text {
-            padding-left: 129px;
+            padding-left: 126px;
+            padding-top: 49px;
+            text-align: left;
         }
         
         .instagram {
             display: flex;
             flex-direction: column;
+            min-height: 465px;
+        }
+        
+        .instagram__title {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .instagram__link {
+            text-decoration: none;
         }
         
         .instagram__wrapper {
@@ -391,10 +445,66 @@
             flex-grow: 1;
         }
         
+        .footer__info {
+            padding: 80px 0 106px;
+        }
+        
+        .footer__info_heading {
+            font-weight: 800;
+            color: white;
+            padding-bottom: 40px;
+            font-size: 26px;
+            line-height: 40px
+        }
+        
         .footer__content {
             background: #f6ad38;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .footer__info_item {
+            color: #6d450c;
+            font-weight: bold;
+            line-height: 35px;
+        }
+        
+        .footer__info_link {
+            text-decoration: none;
+        }
+        
+        .footer__pay {
+            display: flex;
+            flex-direction: column;
+            padding: 80px 0 90px;
+        }
+        
+        .footer__pay-heading {
+            color: white;
+            padding-bottom: 27px;
+            font-size: 26px;
+            line-height: 40px;
+            font-weight: 800;
+        }
+        
+        .footer__pay-list {
+            width: 247px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        
+        .footer__block {
+            padding: 79px 0 173px;
+        }
+        
+        .footer__block-heading {
+            color: white;
+            font-size: 26px;
+            line-height: 40px;
+            font-weight: bold;
+            padding-bottom: 33px;
         }
         
         .footer__row {
