@@ -423,30 +423,39 @@
             min-height: 465px;
         }
         
+        .instagram__top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px
+        }
+        
         .instagram__title {
-            margin-bottom: 50px;
-            text-align: center;
+            font-size: 24px;
+            line-height: 40px;
         }
         
         .instagram__link {
             text-decoration: none;
+            color: #0aa566;
+            font-size: 24px;
+            line-height: 40px;
+            font-family: "Muli-Bold", sans-serif;
         }
         
         .instagram__wrapper {
             display: flex;
+            justify-content: flex-start;
         }
         
         .instagram__card {
-            width: 100%;
             flex-grow: 1;
+            width: 100%;
         }
         
         .instagram__img {
-            flex-grow: 1;
-        }
-        
-        .footer__info {
-            padding: 80px 0 106px;
+            object-fit: contain;
+            width: 100%;
         }
         
         .footer__info_heading {
@@ -461,7 +470,11 @@
             background: #f6ad38;
             display: flex;
             justify-content: space-evenly;
-            align-items: center;
+            padding: 79px 0 93px 0;
+        }
+        
+        .logo__img {
+            margin-top: 80px;
         }
         
         .footer__info_item {
@@ -477,7 +490,6 @@
         .footer__pay {
             display: flex;
             flex-direction: column;
-            padding: 80px 0 90px;
         }
         
         .footer__pay-heading {
@@ -493,10 +505,12 @@
             display: flex;
             flex-wrap: wrap;
             gap: 16px;
+            align-items: center;
         }
         
         .footer__block {
-            padding: 79px 0 173px;
+            display: flex;
+            flex-direction: column;
         }
         
         .footer__block-heading {
@@ -507,6 +521,52 @@
             padding-bottom: 33px;
         }
         
+        .footer__block-input {
+            font-family: "Muli-Bold", sans-serif;
+            padding: 23px 217px 23px 61px;
+            font-size: 17px;
+            color: #6d450c;
+            font-weight: bold;
+            line-height: 35px;
+            border-radius: 35px;
+            width: 495px;
+            height: 60px;
+            margin-bottom: 27px;
+            border: none
+        }
+        
+        .footer__box-small {
+            display: flex;
+            margin-left: 183px;
+        }
+        
+        .footer__follow-us {
+            /* width: 108px; */
+            color: #805313;
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 40px;
+            background-color: #f6ad38;
+            text-transform: uppercase;
+            font-family: "Muli-ExtraBold";
+            border: none;
+            margin-right: 41px;
+        }
+        
+        .footer__block-form {
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer__social {
+            width: 110px;
+        }
+        
+        .footer__social-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        
         .footer__row {
-            background: #6d2c1b;
+            background: #6d450c;
         }

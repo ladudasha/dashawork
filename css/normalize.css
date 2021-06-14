@@ -58,6 +58,8 @@ h5,
 h6 {
     font-family: inherit;
     color: inherit;
+    margin: 0;
+    s padding: 0;
 }
 
 
