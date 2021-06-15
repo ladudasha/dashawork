@@ -95,6 +95,10 @@
             margin-right: 45px;
         }
         
+        .personal__list-item:last-child {
+            margin-right: 0;
+        }
+        
         .personal__counter {
             border-radius: 50%;
             position: absolute;
@@ -116,6 +120,10 @@
             background-color: white;
             text-align: center;
             margin-right: 10px;
+        }
+        
+        .social__list-item:last-child {
+            margin-right: 0;
         }
         
         .social__img {
@@ -152,7 +160,7 @@
         }
         
         .header-heading {
-            color: #000000;
+            color: white;
             font-size: 95px;
             line-height: 95px;
             text-align: center;
@@ -179,7 +187,7 @@
         }
         
         .smoothies__text {
-            width: 915px;
+            max-width: 915px;
             margin-bottom: 90px;
             text-align: center;
             margin: 0 auto 60px;
@@ -200,7 +208,7 @@
             justify-content: flex-end;
             align-items: center;
             flex-direction: column;
-            width: 230px;
+            width: 25%;
             height: 180px;
         }
         
@@ -228,8 +236,18 @@
         }
         
         .about__list {
-            padding-top: 60px;
-            padding-bottom: 50px;
+            margin-top: 60px;
+            margin-bottom: 50px;
+        }
+        
+        .about-item {
+            margin-bottom: 22px;
+            color: #ffffff;
+        }
+        
+        .about__text--bold {
+            font-family: "Muli-Bold", sans-serif;
+            font-weight: bold;
         }
         
         .about__btn {
@@ -251,12 +269,11 @@
         
         .products__wrapper {
             display: flex;
-            justify-content: space-between;
         }
         
         .products__box {
             display: flex;
-            width: 480px;
+            width: 25%;
             align-items: center;
             flex-direction: column;
             justify-content: center;
@@ -265,7 +282,7 @@
         }
         
         .products__heading {
-            padding: 35px 0 60px;
+            margin: 35px 0 60px;
             text-align: center;
             color: white;
         }
@@ -368,14 +385,15 @@
         }
         
         .testimonials__santa {
-            padding: 0 125px;
             color: #f7ae3b;
+            display: block;
+            text-align: center;
         }
         
         .testimonials__title {
             text-align: center;
             position: relative;
-            padding-bottom: 128px;
+            margin-bottom: 128px;
         }
         
         .testimonials__love {
@@ -398,39 +416,31 @@
         }
         
         .blog__content {
-            max-width: 603px;
+            margin-left: 60px;
             padding: 185px 0 0 0;
         }
         
         .blog__heading {
             color: #f2612d;
-            margin-left: 60px;
         }
         
-        .blog__date {
-            margin-left: 60px;
-        }
+        .blog__date {}
         
         .blog__text {
-            padding-left: 126px;
-            padding-top: 49px;
-            text-align: left;
+            max-width: 540px;
+            padding: 0 0 0 65px;
         }
         
         .instagram {
             display: flex;
             flex-direction: column;
-            min-height: 465px;
-        }
-        
-        .instagram__top {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 50px
         }
         
         .instagram__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
             font-size: 24px;
             line-height: 40px;
         }
@@ -445,17 +455,16 @@
         
         .instagram__wrapper {
             display: flex;
-            justify-content: flex-start;
         }
         
         .instagram__card {
             flex-grow: 1;
-            width: 100%;
+            width: 25%;
         }
         
         .instagram__img {
-            object-fit: contain;
             width: 100%;
+            height: 100%;
         }
         
         .footer__info_heading {
@@ -469,12 +478,18 @@
         .footer__content {
             background: #f6ad38;
             display: flex;
-            justify-content: space-evenly;
             padding: 79px 0 93px 0;
+            justify-content: center
         }
+        
+        .footer__logo {}
         
         .logo__img {
             margin-top: 80px;
+        }
+        
+        .footer__info {
+            margin-left: 296px;
         }
         
         .footer__info_item {
@@ -488,6 +503,7 @@
         }
         
         .footer__pay {
+            margin-left: 150px;
             display: flex;
             flex-direction: column;
         }
@@ -509,6 +525,7 @@
         }
         
         .footer__block {
+            margin-left: 160px;
             display: flex;
             flex-direction: column;
         }
@@ -533,6 +550,10 @@
             height: 60px;
             margin-bottom: 27px;
             border: none
+        }
+        
+        .footer__block-input::placeholder {
+            color: inherit;
         }
         
         .footer__box-small {
