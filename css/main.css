@@ -50,7 +50,7 @@
         }
         
         .header__top {
-            padding: 75px 0 111px;
+            padding: 85px 0 111px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -128,7 +128,7 @@
             bottom: 25px;
             width: 22px;
             height: 21px;
-            background-color: #fff;
+            background-color: #fff
         }
         
         .personal__link {
@@ -165,18 +165,33 @@
         
         .btn {
             border-radius: 35px;
-            height: 60px;
-            font-size: 21px;
+            /* height: 60px;
+            font-size: 21px; */
             font-family: "Muli-ExtraBold";
             font-weight: bold;
             color: white;
         }
         
         .header__btn {
+            padding-right: 75px;
             width: 280px;
             height: 70px;
             font-size: 24px;
             line-height: 40px;
+            position: relative;
+        }
+        
+        .header__btn::after {
+            content: "";
+            background-image: url(../img/header/Arrow.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            position: absolute;
+            border: 2px solid red;
+            width: 30px;
+            height: 16px;
+            right: 27px;
+            bottom: 24px;
         }
         
         .btn--green {
@@ -188,10 +203,11 @@
             font-size: 95px;
             line-height: 95px;
             text-align: center;
-            margin-top: 315px;
+            margin: 10px;
         }
         
         .smoothies {
+            padding: 94px 0 136px;
             min-height: 870px;
             margin: 0 auto;
         }
@@ -201,13 +217,15 @@
             color: #f7ae3b;
             font-weight: bold;
             font-size: 50px;
+            letter-spacing: -1px;
         }
         
         .smoothies__title {
             color: #f7ae3b;
-            margin-top: 97px;
-            margin-bottom: 40px;
+            margin-top: 0;
+            margin-bottom: 47px;
             text-align: center;
+            letter-spacing: -1px;
         }
         
         .smoothies__text {
@@ -251,15 +269,16 @@
         .about__img {
             width: 691px;
             height: 818px;
-            transform: translateY(63px);
+            /* transform: translateY(63px); */
             -webkit-transform: translateY(63px);
-            -moz-transform: translateY(63px);
+            /* -moz-transform: translateY(63px);
             -ms-transform: translateY(63px);
-            -o-transform: translateY(63px);
+            -o-transform: translateY(63px); */
         }
         
         .about__text {
-            margin-left: 120px;
+            margin-left: 124px;
+            margin-right: 138px
         }
         
         .about__title {
@@ -267,16 +286,33 @@
             font-size: 55px;
             line-height: 60px;
             max-width: 644px;
-            padding: 100px 0 0 0;
+            padding: 84px 0 0 0;
+        }
+        
+        .about__title-green {
+            color: #cae941;
+            position: relative;
+        }
+        
+        .about__title-green::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/about/Line-green.png);
+            width: 450px;
+            height: 13px;
+            top: 68px;
+            left: 0px;
         }
         
         .about__list {
-            margin-top: 60px;
-            margin-bottom: 50px;
+            font-size: 21px;
+            line-height: 24px;
+            margin-top: 59px;
+            margin-bottom: 53px;
         }
         
         .about-item {
-            margin-bottom: 22px;
+            margin-bottom: 19px;
             color: #ffffff;
         }
         
@@ -291,17 +327,30 @@
             text-decoration: none;
             width: 380px;
             height: 60px;
-            display: inline-block;
+            display: block;
             font-size: 21px;
             line-height: 22px;
             text-align: center;
             padding: 18px 91px 15px 30px;
-            margin-bottom: 94px;
+            margin-top: 20px;
+            position: relative
         }
         
-        .btn--white {
-            border: 2px solid #e34761;
+        .about__btn::before {
+            content: '';
+            display: block;
+            background-image: url(../img/about/Arrow.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            right: 25px;
+            bottom: 20px;
+            width: 30px;
+            height: 16px;
         }
+        /* .btn--white {
+            border: 2px solid #e34761;
+        } */
         
         .products__wrapper {
             display: flex;
@@ -314,13 +363,14 @@
             flex-direction: column;
             justify-content: center;
             flex-grow: 1;
-            padding: 125px 0 80px;
+            padding: 96px 0px 88px;
         }
         
         .products__heading {
+            font-size: 25px;
             margin: 35px 0 60px;
             text-align: center;
-            color: white;
+            color: white
         }
         
         .products__box--red {
@@ -344,7 +394,7 @@
             width: 198px;
             display: inline-block;
             text-decoration: none;
-            padding: 20px 128px 15px 33px;
+            padding: 17px 128px 15px 33px;
             line-height: 22px;
             border: 2px solid #ffffff;
             position: relative;
@@ -377,6 +427,7 @@
         
         .story__content {
             margin-right: 200px;
+            position: relative;
         }
         
         .story__title {
@@ -396,6 +447,19 @@
             text-decoration: none;
             line-height: 15px;
             background-color: #0aa566;
+        }
+        
+        .story__btn::before {
+            content: '';
+            display: block;
+            background-image: url(../img/about/Arrow.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: 210px;
+            bottom: 21px;
+            width: 30px;
+            height: 16px;
         }
         
         .testimonials {
@@ -479,6 +543,23 @@
             padding: 0 0 0 65px;
         }
         
+        .blog__arrow {
+            position: relative;
+        }
+        
+        .blog__arrow::after {
+            content: '';
+            display: block;
+            background-image: url(../img/blog/Arrow.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: 103px;
+            bottom: 2px;
+            width: 30px;
+            height: 16px;
+        }
+        
         .instagram {
             display: flex;
             flex-direction: column;
@@ -499,6 +580,19 @@
             font-size: 24px;
             line-height: 40px;
             font-family: "Muli-Bold", sans-serif;
+            position: relative;
+        }
+        
+        .instagram__link::before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/instagram/Icon.png);
+            width: 26px;
+            height: 26px;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 7px;
+            left: -38px;
         }
         
         .instagram__wrapper {
@@ -618,6 +712,18 @@
             font-family: "Muli-ExtraBold";
             border: none;
             margin-right: 41px;
+            position: relative;
+        }
+        
+        .footer__follow-us::before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/footer/Arrow.png);
+            width: 48px;
+            height: 43px;
+            background-position: center;
+            top: -17px;
+            left: -59px;
         }
         
         .footer__block-form {
