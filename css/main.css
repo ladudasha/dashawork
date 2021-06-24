@@ -70,6 +70,10 @@
             margin-right: 30px;
         }
         
+        .menu__item:hover {
+            transform: scale(1.2);
+        }
+        
         .menu__item:last-child {
             margin-right: 0;
         }
@@ -136,6 +140,14 @@
             position: relative;
         }
         
+        .personal__img:hover {
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+        }
+        
         .social__list {
             display: flex;
         }
@@ -179,6 +191,14 @@
             font-size: 24px;
             line-height: 40px;
             position: relative;
+            cursor: pointer;
+        }
+        
+        .header__btn:hover {
+            opacity: 0.5;
+            -webkit-transform: translate(10px);
+            transform: translate(10px);
+            transition-duration: 500ms;
         }
         
         .header__btn::after {
@@ -260,6 +280,10 @@
             margin-bottom: 30px;
         }
         
+        .smoothies__heading:hover {
+            font-size: 25px;
+        }
+        
         .about {
             height: 800px;
         }
@@ -273,11 +297,11 @@
         .about__img {
             width: 691px;
             height: 818px;
-            /* transform: translateY(63px); */
             -webkit-transform: translateY(63px);
-            /* -moz-transform: translateY(63px);
-            -ms-transform: translateY(63px);
-            -o-transform: translateY(63px); */
+        }
+        
+        .about__img:hover {
+            transform: rotate(-7deg);
         }
         
         .about__text {
@@ -318,6 +342,21 @@
         .about-item {
             margin-bottom: 19px;
             color: #ffffff;
+            position: relative;
+            margin-left: 42px;
+        }
+        
+        .about-item::after {
+            content: '';
+            display: block;
+            background-image: url(../img/about/1.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: -35px;
+            bottom: 0px;
+            width: 18px;
+            height: 18px;
         }
         
         .about__text--bold {
@@ -338,6 +377,10 @@
             padding: 17px 93px 15px 28px;
             margin-top: 20px;
             position: relative
+        }
+        
+        .about__btn:hover {
+            width: 400px;
         }
         
         .about__btn::before {
@@ -377,6 +420,10 @@
             color: white
         }
         
+        .products__italik {
+            font-weight: 500;
+        }
+        
         .products__box--red {
             background-color: #672a15;
         }
@@ -402,6 +449,10 @@
             line-height: 22px;
             border: 2px solid #ffffff;
             position: relative;
+        }
+        
+        .products__btn:hover {
+            box-shadow: 0px 0px 0px 2px #f90914, 0px 0px 0px 7px #a7f9c9, 0px 0px 0px 9px #f90914, 0px 0px 5px 10px #ff4d00;
         }
         
         .products__btn::before {
@@ -495,8 +546,8 @@
             width: 410px;
             height: 300px;
             background-image: url(../img/testimonials/Dots.png);
-            top: -80px;
-            left: 60px;
+            top: -92px;
+            right: 54px
         }
         
         .testimonials__excerpt {
@@ -514,9 +565,39 @@
             padding-left: 55px;
         }
         
+        .arrows--left {
+            background-image: url(../img/testimonials/Arrow-left.png);
+            width: 41px;
+            height: 16px;
+            background-color: transparent;
+            margin-right: 90px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+        
+        .arrows--left:hover {
+            transform: translateX(-20px);
+            transition-duration: 500ms;
+        }
+        
+        .arrows--right {
+            background-image: url(../img/testimonials/Arrow.png);
+            width: 41px;
+            height: 16px;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+        }
+        
+        .arrows--right:hover {
+            transform: translateX(20px);
+            transition-duration: 500ms;
+        }
+        
         .arrows {
             text-align: center;
-            padding-top: 140px;
+            padding-top: 81px;
         }
         
         .testimonials__wrap {
@@ -558,13 +639,29 @@
             justify-content: center;
         }
         
+        .blog__box {
+            position: relative;
+        }
+        
+        .blog__box::after {
+            content: "";
+            position: absolute;
+            width: 687px;
+            height: 12px;
+            background: #f7ae3b;
+            border-radius: 50px;
+            top: 165px;
+            left: 515px;
+            z-index: -1;
+        }
+        
         .blog__title {
             margin-bottom: 48px;
         }
         
         .blog__content {
-            margin-left: 60px;
-            padding: 219px 42px 0 0px;
+            margin-left: 68px;
+            padding: 220px 34px 0 0px;
         }
         
         .blog__heading {
@@ -583,6 +680,12 @@
         
         .blog__arrow {
             position: relative;
+            display: inline-block;
+        }
+        
+        .blog__arrow:hover {
+            transform: scale(1.1);
+            transition-duration: 500ms;
         }
         
         .blog__arrow::after {
@@ -593,7 +696,7 @@
             background-position: center;
             position: absolute;
             left: 103px;
-            bottom: 2px;
+            bottom: 8px;
             width: 30px;
             height: 16px;
         }
@@ -604,12 +707,15 @@
         }
         
         .instagram__title {
+            font-family: "Muli-ExtraBold";
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 42px;
+            margin-bottom: 41px;
             font-size: 24px;
             line-height: 40px;
+            padding-left: 58px;
+            letter-spacing: 0;
         }
         
         .instagram__link {
@@ -635,11 +741,25 @@
         
         .instagram__wrapper {
             display: flex;
+            margin-bottom: 5px;
         }
         
         .instagram__card {
             flex-grow: 1;
             width: 25%;
+            position: relative;
+        }
+        
+        .instagram__card::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/instagram/Iconwite.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            bottom: 15px;
+            right: 20px;
+            width: 26px;
+            height: 26px;
         }
         
         .instagram__img {
@@ -734,15 +854,15 @@
         
         .footer__block-input {
             font-family: "Muli-Bold", sans-serif;
-            padding: 26px 212px 20px 62px;
-            font-size: 16px;
+            padding: 27px 200px 20px 62px;
+            font-size: 17px;
             color: #6d450c;
             font-weight: bold;
             line-height: 35px;
             border-radius: 35px;
             width: 495px;
             height: 60px;
-            margin-bottom: 22px;
+            margin-bottom: 21px;
             border: none;
             position: relative;
         }
@@ -818,8 +938,8 @@
             border-radius: 5px;
             background-color: #f2662f;
             position: fixed;
-            right: 35px;
-            bottom: 45px;
+            right: 82px;
+            bottom: 38px;
             background-image: url(../img/footer/Iconup.png);
             background-repeat: no-repeat;
             background-position: center;
