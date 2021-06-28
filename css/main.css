@@ -204,7 +204,6 @@
         }
         
         .header__btn:hover {
-            -webkit-transform: translate(10px);
             transform: translate(10px);
             transition-duration: 500ms;
         }
@@ -280,6 +279,20 @@
             flex-direction: column;
             width: 25%;
             height: 180px;
+            border-left: 1px solid gray;
+            border-top: 1px solid gray;
+        }
+        
+        .smoothies__card:nth-child(5) {
+            border-left: none;
+        }
+        
+        .smoothies__card:first-child {
+            border-left: none;
+        }
+        
+        .smoothies__card:nth-child(-n+4) {
+            border-top: none;
         }
         
         .smoothies__heading {
@@ -542,7 +555,7 @@
         
         .testimonials {
             height: 722px;
-            background-color: #632d1b;
+            background-color: #6b2c1a;
             padding: 93px 0 80px;
             position: relative;
         }
@@ -562,6 +575,19 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            width: 734px;
+            margin: 0 auto;
+        }
+        
+        .testimonials__excerpt::before {
+            content: "Sarah A";
+            position: absolute;
+            top: -8px;
+            left: -147px;
+            font-size: 200px;
+            line-height: 40px;
+            color: #59210f;
+            font-weight: 700;
         }
         
         .testimonials__santa {
@@ -570,6 +596,7 @@
         
         .testimonials__avatar {
             padding-left: 55px;
+            z-index: 1;
         }
         
         .arrows--left {
@@ -580,6 +607,7 @@
             margin-right: 90px;
             background-repeat: no-repeat;
             cursor: pointer;
+            border: none;
         }
         
         .arrows--left:hover {
@@ -595,6 +623,7 @@
             background-repeat: no-repeat;
             background-position: center;
             cursor: pointer;
+            border: none;
         }
         
         .arrows--right:hover {
@@ -611,6 +640,7 @@
             margin-bottom: 22px;
             align-items: center;
             max-width: 455px;
+            z-index: 1;
         }
         
         .testimonials__blockquote {
