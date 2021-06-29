@@ -354,7 +354,7 @@
             font-size: 21px;
             line-height: 22px;
             margin-top: 51px;
-            margin-bottom: 32px
+            margin-bottom: 52px
         }
         
         .about-item {
@@ -393,8 +393,8 @@
             line-height: 22px;
             text-align: center;
             padding: 17px 93px 15px 28px;
-            margin-top: 20px;
-            position: relative
+            position: relative;
+            margin-bottom: 50px;
         }
         
         .about__btn:hover {
@@ -420,16 +420,19 @@
         
         .products__wrapper {
             display: flex;
+            overflow-x: scroll;
         }
         
         .products__box {
             display: flex;
-            width: 25%;
+            /* width: 25%; */
+            height: 800px;
+            width: 480px;
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            flex-grow: 1;
-            padding: 111px 0px 88px;
+            /* flex-grow: 1; */
+            /* padding: 110px 0px 88px; */
         }
         
         .products__heading {
@@ -498,6 +501,7 @@
             align-items: center;
             justify-content: center;
             padding-top: 111px;
+            flex-wrap: wrap;
         }
         
         .story__content {
@@ -996,4 +1000,13 @@
             top: 38px;
             display: block;
             width: 55px
+        }
+        
+        @media screen and (max-width: 768px) {
+            .smoothies__wrapper {
+                max-width: 540px;
+            }
+            .smoothies__card {
+                width: 50%;
+            }
         }
