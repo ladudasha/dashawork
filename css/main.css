@@ -332,13 +332,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* padding: 0 30px; */
 }
 
 .about__img {
     max-width: 691px;
     width: 100%;
-    /* height: 818px; */
     -webkit-transform: translateY(63px);
 }
 
@@ -364,6 +362,7 @@
     content: "";
     position: absolute;
     background-image: url(../img/about/Line-green.png);
+    background-repeat: no-repeat;
     width: 450px;
     height: 13px;
     top: 62px;
@@ -406,7 +405,7 @@
     border: 2px solid #f8b231;
     background: #127f70;
     text-decoration: none;
-    width: 380px;
+    width: 100%;
     height: 60px;
     display: block;
     font-size: 21px;
@@ -415,11 +414,6 @@
     padding: 17px 93px 15px 28px;
     position: relative;
     margin-bottom: 50px;
-}
-
-.about__btn:hover {
-    width: 400px;
-    transition-duration: 500ms;
 }
 
 .about__btn::before {
@@ -533,7 +527,7 @@
 }
 
 .story__text {
-    width: 515px;
+    max-width: 515px;
     margin: 37px 0 61px;
     font-weight: bold;
 }
@@ -561,7 +555,8 @@
 .story__btn {
     padding: 22px 30px;
     display: inline-block;
-    width: 302px;
+    max-width: 302px;
+    width: 100%;
     text-decoration: none;
     line-height: 15px;
     background-color: #0aa566;
@@ -891,11 +886,15 @@
 }
 
 .footer__pay-list {
-    width: 247px;
+    max-width: 247px;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    /* gap: 16px; */
     align-items: center;
+}
+
+.footer__pay-item {
+    margin-right: 10px;
 }
 
 .footer__block {
@@ -984,12 +983,15 @@
 }
 
 .footer__social {
-    min-width: 110px;
+    max-width: 110px;
 }
 
 .footer__social-list {
     display: flex;
-    justify-content: space-between;
+}
+
+.footer__social-item {
+    margin-right: 22px;
 }
 
 .footer__row {
@@ -1036,6 +1038,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .title {
+        font-size: 45px;
+        line-height: 40px;
+    }
     .header__navigation {
         display: none;
         position: fixed;
@@ -1085,7 +1091,7 @@
         border-top: 1px solid grey;
     }
     .about__img {
-        padding: 10px 30px 60px;
+        padding-bottom: 60px;
     }
     .about__text {
         margin-left: 20px;
@@ -1093,9 +1099,7 @@
     }
     .about__btn {
         margin-bottom: 80px;
-    }
-    .about__title {
-        font-size: 45px;
+        max-width: 385px;
     }
     .story__wrapper {
         padding-top: 90px;
@@ -1109,7 +1113,7 @@
     }
     .story__content {
         margin-bottom: 80px;
-        margin-left: 30px;
+        margin-right: auto;
     }
     .testimonials {
         padding: 115px 30px 85px 30px;
@@ -1119,10 +1123,10 @@
     }
     .testimonials__title {
         margin-bottom: 90px;
-        font-size: 47px;
     }
     .testimonials__avatar {
         margin-bottom: 85px;
+        padding-left: 0;
     }
     .testimonials__blockquote {
         margin-bottom: 25px;
@@ -1138,6 +1142,9 @@
     .blog__wrapp {
         justify-content: flex-start;
     }
+    .blog__box {
+        width: 100%;
+    }
     .blog__box::after {
         display: none;
     }
@@ -1147,7 +1154,7 @@
     }
     .blog__img {
         width: 100%;
-        min-width: 680px;
+        max-width: 680px;
     }
     .instagram__wrapper {
         overflow-x: scroll;
@@ -1190,25 +1197,124 @@
     .footer__btn-top {
         right: 35px;
     }
-    .footer__follow-us {}
-    /* .footer__box-small {
-        margin: 0 auto 0 0;
-    } */
 }
 
 @media screen and (max-width: 360px) {
+    .title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .header__btn {
+        margin-top: 50px;
+    }
     .header-heading {
-        font-size: 52px;
-        line-height: 67px;
+        display: none;
+    }
+    .smoothies {
+        padding: 50px 10px;
+    }
+    .smoothies__text {
+        font-size: 16px;
+    }
+    .smoothies__card {
+        padding: 0;
+    }
+    .smoothies__heading {
+        font-size: 16px;
+    }
+    .about__wrapper {
+        justify-content: flex-start;
+    }
+    .about__title {
+        padding-top: 60px;
+    }
+    .about__text {
+        margin-left: 0px;
+    }
+    .about__list {
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 50px
+    }
+    .about__title {
+        padding-top: 40px;
+    }
+    .about__title-green::after {
+        display: none;
+    }
+    .about__btn {
+        font-size: 15px;
+    }
+    .products__box {
+        min-width: 240px;
+    }
+    .products__heading {
+        font-size: 19px;
+    }
+    .story__wrapper {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    .story__text {
+        font-size: 16px;
+        margin: 35px 0 45px;
+    }
+    .story__pic::after {
+        display: none;
+    }
+    .testimonials {
+        padding: 54px 10px 90px 10px;
+    }
+    .testimonials__excerpt::before {
+        display: none;
+    }
+    .testimonials__santa {
+        font-size: 16px;
+    }
+    .testimonials__blockquote {
+        font-size: 16px;
+    }
+    .blog__wrapp {
+        padding: 75px 0 90px;
+    }
+    .blog__heading {
+        font-size: 26px;
+    }
+    .blog__date {
+        font-size: 14px;
+    }
+    .blog__text {
+        padding: 0;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .instagram__card {
+        min-width: 250px;
+        margin-bottom: 70px;
     }
     .footer__content {
         justify-content: flex-start;
     }
     .footer__info {
         width: 100%;
+        margin-bottom: 70px;
     }
     .footer__pay {
         width: 100%;
+        max-width: 340px;
+        margin-bottom: 70px;
+    }
+    .footer__info_heading {
+        margin-bottom: 35px;
+    }
+    .footer__pay-item {
+        flex-basis: 20px;
+    }
+    .footer__pay-list {
+        max-width: 340px;
     }
     .footer__block {
         margin: 0;
