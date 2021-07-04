@@ -26,11 +26,13 @@ html {
  * Remove the margin in all browsers.
  */
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 ul {
