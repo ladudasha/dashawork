@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "Muli-BoldItalic";
-    src: url(../assets/fonts/Muli-BoldItalic.ttf) format('truetype');
+    src: url(./assets/fonts/Muli-BoldItalic.ttf) format('truetype');
     font-weight: bold;
     font-style: italic;
 }
@@ -37,7 +37,7 @@
 }
 
 .header {
-    background-image: url(../img/header/big-img.jpg);
+    background-image: url(../assets/img/header/big-img.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -234,7 +234,7 @@
 
 .header__btn::after {
     content: "";
-    background-image: url(../img/header/Arrow.png);
+    background-image: url(../assets/img/header/Arrow.png);
     background-repeat: no-repeat;
     background-position: bottom;
     position: absolute;
@@ -364,7 +364,7 @@
 .about__title-green::after {
     content: "";
     position: absolute;
-    background-image: url(../img/about/Line-green.png);
+    background-image: url(../assets/img/about/Line-green.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -390,7 +390,7 @@
 .about-item::after {
     content: '';
     display: block;
-    background-image: url(../img/about/1.png);
+    background-image: url(../assets/img/about/1.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -424,7 +424,7 @@
 .about__btn::before {
     content: '';
     display: block;
-    background-image: url(../img/about/Arrow.png);
+    background-image: url(../assets/img/about/Arrow.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -495,7 +495,7 @@
 .products__btn::before {
     content: '';
     display: block;
-    background-image: url(../img/products/Arrow-white.png);
+    background-image: url(../assets/img/products/Arrow-white.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -543,7 +543,7 @@
 .story__pic::after {
     content: "";
     position: absolute;
-    background-image: url(../img/story/Stamp.png);
+    background-image: url(../assets/img/story/Stamp.png);
     width: 308px;
     height: 216px;
     top: 15px;
@@ -566,7 +566,7 @@
 .story__btn::before {
     content: '';
     display: block;
-    background-image: url(../img/about/Arrow.png);
+    background-image: url(../assets/img/about/Arrow.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -587,7 +587,7 @@
     position: absolute;
     width: 410px;
     height: 300px;
-    background-image: url(../img/testimonials/Dots.png);
+    background-image: url(../assets/img/testimonials/Dots.png);
     top: -85px;
     right: 42px
 }
@@ -623,7 +623,7 @@
 }
 
 .arrows--left {
-    background-image: url(../img/testimonials/Arrow-left.png);
+    background-image: url(../assets/img/testimonials/Arrow-left.png);
     width: 41px;
     height: 16px;
     background-color: transparent;
@@ -639,7 +639,7 @@
 }
 
 .arrows--right {
-    background-image: url(../img/testimonials/Arrow.png);
+    background-image: url(../assets/img/testimonials/Arrow.png);
     width: 41px;
     height: 16px;
     background-color: transparent;
@@ -752,7 +752,7 @@
 .blog__arrow::after {
     content: '';
     display: block;
-    background-image: url(../img/blog/Arrow.png);
+    background-image: url(../assets/img/blog/Arrow.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -791,7 +791,7 @@
 .instagram__link::before {
     content: "";
     position: absolute;
-    background-image: url(../img/instagram/Icon.png);
+    background-image: url(../assets/img/instagram/Icon.png);
     width: 26px;
     height: 26px;
     background-position: center;
@@ -817,7 +817,7 @@
 .instagram__card::after {
     content: "";
     position: absolute;
-    background-image: url(../img/instagram/Iconwite.png);
+    background-image: url(../assets/img/instagram/Iconwite.png);
     background-position: center center;
     background-repeat: no-repeat;
     bottom: 15px;
@@ -921,7 +921,7 @@
 .footer__block-form::before {
     content: " ";
     position: absolute;
-    background-image: url(../img/footer/Icon.png);
+    background-image: url(../assets/img/footer/Icon.png);
     top: 22px;
     left: 21px;
     width: 24px;
@@ -973,7 +973,7 @@
 .footer__follow-us::before {
     content: "";
     position: absolute;
-    background-image: url(../img/footer/Arrow.png);
+    background-image: url(../assets/img/footer/Arrow.png);
     width: 48px;
     height: 43px;
     background-position: center;
@@ -1019,7 +1019,7 @@
     position: fixed;
     right: 82px;
     bottom: 38px;
-    background-image: url(../img/footer/Iconup.png);
+    background-image: url(../assets/img/footer/Iconup.png);
     background-repeat: no-repeat;
     background-position: center;
 }
