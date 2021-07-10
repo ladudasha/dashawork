@@ -1,0 +1,9 @@
+.btn {
+    border-radius: 35px;
+    font-family: "Muli-ExtraBold";
+    font-weight: bold;
+    color: white;
+    &--green {
+        background-color: green;
+    }
+}

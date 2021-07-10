@@ -1,0 +1,30 @@
+.personal {
+    &__list {
+        display: flex;
+    }
+    &__list-item {
+        margin-right: 45px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        left: 21px;
+        bottom: 21px;
+        width: 22px;
+        height: 21px;
+        background-color: #fff
+    }
+    &__link {
+        position: relative;
+    }
+    &__img:hover {
+        transform: scale(1.2);
+        transition-duration: 500ms;
+    }
+}

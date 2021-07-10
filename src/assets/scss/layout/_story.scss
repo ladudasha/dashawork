@@ -1,0 +1,61 @@
+.story {
+    margin: 0 auto;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 106px;
+        padding-bottom: 150px;
+        flex-wrap: wrap;
+    }
+    &__content {
+        margin-right: 200px;
+    }
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__text {
+        max-width: 515px;
+        margin: 37px 0 50px;
+        font-weight: bold;
+    }
+    &__pic {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(./../images/story/Stamp.png);
+            width: 308px;
+            height: 216px;
+            top: 15px;
+            left: -184px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    &__img {
+        max-width: 100%;
+    }
+    &__btn {
+        padding: 22px 30px;
+        display: inline-block;
+        max-width: 302px;
+        width: 100%;
+        text-decoration: none;
+        line-height: 15px;
+        background-color: #0aa566;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            background-image: url(./../images/about/Arrow.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: 210px;
+            bottom: 21px;
+            width: 30px;
+            height: 16px;
+        }
+    }
+}

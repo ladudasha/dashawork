@@ -1,0 +1,54 @@
+.smoothies {
+    padding: 94px 0 136px;
+    min-height: 870px;
+    margin: 0 auto;
+    &__title {
+        color: #f7ae3b;
+        margin-top: 5px;
+        margin-bottom: 47px;
+        text-align: center;
+        letter-spacing: -1px;
+    }
+    &__text {
+        max-width: 915px;
+        margin-bottom: 90px;
+        text-align: center;
+        margin: 0 auto 60px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        max-width: 980px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+        flex: 1 0 25%;
+    }
+    &__card {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        width: 25%;
+        height: 180px;
+        padding: 0 0 27px 0;
+        border-left: 1px solid gray;
+        border-top: 1px solid gray;
+        &:nth-child(5) {
+            border-left: none;
+        }
+        &:first-child {
+            border-left: none;
+        }
+        &:nth-child(-n+4) {
+            border-top: none;
+        }
+    }
+    &__heading {
+        color: #f2612d;
+        margin-top: 16px;
+        text-align: center;
+        font-size: 25px;
+        line-height: 40px;
+    }
+}

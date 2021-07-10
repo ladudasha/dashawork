@@ -1,0 +1,177 @@
+.footer {
+    background-color: #f6ad38;
+    &__info_heading {
+        font-weight: 800;
+        color: white;
+        padding-bottom: 18px;
+        font-size: 27px;
+        line-height: 37px;
+    }
+    &__content {
+        display: flex;
+        padding: 75px 0 101px 0;
+        flex-wrap: wrap;
+    }
+    &__logo {
+        margin-top: 62px;
+        width: 29%;
+    }
+    &__info {
+        width: 18%;
+        margin-right: 10px;
+        &_item {
+            color: #6d450c;
+            font-weight: bold;
+            line-height: 35px;
+        }
+    }
+    &__info_link {
+        text-decoration: none;
+    }
+    &__pay {
+        width: 23%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        &-heading {
+            color: white;
+            padding-bottom: 20px;
+            font-size: 26px;
+            line-height: 37px;
+            font-weight: 800;
+        }
+        &-list {
+            max-width: 247px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+        }
+        &-item {
+            margin-right: 10px;
+        }
+    }
+    &__block {
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+        &-heading {
+            color: white;
+            font-size: 26px;
+            line-height: 38px;
+            font-weight: bold;
+            padding-bottom: 22px;
+        }
+        &-form {
+            display: flex;
+            align-items: center;
+            position: relative;
+            &::before {
+                content: " ";
+                position: absolute;
+                background-image: url(./../images/footer/Icon.png);
+                top: 22px;
+                left: 21px;
+                width: 24px;
+                height: 19px;
+                background-position: center;
+                z-index: 1;
+            }
+        }
+        &-input {
+            font-family: "Muli-Bold", sans-serif;
+            padding: 21px 0 20px 62px;
+            font-size: 17px;
+            color: #6d450c;
+            font-weight: bold;
+            line-height: 35px;
+            border-radius: 35px;
+            max-width: 495px;
+            width: 100%;
+            height: 60px;
+            margin-bottom: 21px;
+            border: none;
+            position: relative;
+            &::placeholder {
+                color: inherit;
+            }
+        }
+    }
+    &__box-small {
+        max-width: 335px;
+        display: flex;
+        margin-left: 111px;
+    }
+    &__follow-us {
+        color: #805313;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 40px;
+        background-color: #f6ad38;
+        text-transform: uppercase;
+        font-family: "Muli-ExtraBold";
+        border: none;
+        padding-left: 74px;
+        margin-right: 41px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(./../images/footer/Arrow.png);
+            width: 48px;
+            height: 43px;
+            background-position: center;
+            top: 25%;
+            left: 5%;
+            transform: translateY(-50%);
+        }
+    }
+    &__social {
+        max-width: 110px;
+        &-list {
+            display: flex;
+        }
+        &-item {
+            margin-right: 22px;
+        }
+    }
+    &__row {
+        height: 60px;
+        background: #6d450c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &__center-text {
+        font-size: 13px;
+        line-height: 35px;
+        color: #af8a82;
+        display: block;
+        text-align: center;
+    }
+    &__btn-top {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #f2662f;
+        position: fixed;
+        right: 82px;
+        bottom: 38px;
+        background-image: url(./../images/footer/Iconup.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        &::after {
+            content: "Go top";
+            color: white;
+            font-family: "Muli-Bold", sans-serif;
+            font-size: 16px;
+            line-height: 40px;
+            position: absolute;
+            right: 54px;
+            top: 38px;
+            display: block;
+            width: 55px
+        }
+    }
+}
