@@ -46,12 +46,13 @@
         background-color: #0aa566;
         position: relative;
         &::before {
-            content: '';
-            display: block;
+            @include pseudo ();
+            // content: '';
+            // display: block;
             background-image: url(./../images/about/Arrow.png);
             background-repeat: no-repeat;
             background-position: center;
-            position: absolute;
+            // position: absolute;
             left: 210px;
             bottom: 21px;
             width: 30px;

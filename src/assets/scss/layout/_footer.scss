@@ -115,8 +115,9 @@
         margin-right: 41px;
         position: relative;
         &::before {
-            content: "";
-            position: absolute;
+            @include pseudo ();
+            // content: "";
+            // position: absolute;
             background-image: url(./../images/footer/Arrow.png);
             width: 48px;
             height: 43px;
