@@ -532,7 +532,7 @@
     transition-duration: 500ms;
 }
 
-.products__btn__btn::before {
+.products__btn::before {
     content: '';
     display: block;
     background-image: url(./../images/products/Arrow-white.png);
@@ -862,6 +862,7 @@
     width: 20%;
     min-width: 300px;
     position: relative;
+    background: linear-gradient(135deg, rgba(249, 249, 249, 0), rgba(109, 109, 109, 0) 48%);
 }
 
 .instagram__card::after {
