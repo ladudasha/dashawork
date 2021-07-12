@@ -1,59 +1,61 @@
-    @font-face {
-        font-family: "Muli-Regular";
-        src: url(./assets/fonts/Muli-Regular.woff) format('truetype');
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: "Muli-Bold";
-        src: url(./assets/fonts/Muli-Bold.ttf) format('truetype');
-        font-weight: bold;
-    }
-    
-    @font-face {
-        font-family: "Muli-BoldItalic";
-        src: url(./assets/fonts/Muli-BoldItalic.ttf) format('truetype');
-        font-weight: bold;
-        font-style: italic;
-    }
-    
-    @font-face {
-        font-family: "Muli-ExtraBold";
-        src: url(./assets/fonts/Muli-ExtraBold.woff) format('truetype');
-        font-weight: bold;
-    }
-    
-    @font-face {
-        font-family: "Muli-Italic";
-        src: url(./assets/fonts/Muli-Italic.ttf) format('truetype');
-        font-style: italic;
-    }
-    
-    @font-face {
-        font-family: "Muli-Semi-BoldItalic";
-        src: url(./assets/fonts/Muli-Semi-BoldItalic.ttf)format('truetype');
-        font-style: italic;
-        font-weight: bold;
-    }
-    
-    .container {
-        max-width: 1740px;
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-    
-    @import './components/button';
-    @import './layout/header';
-    @import './components/menu';
-    @import './components/personal';
-    @import './components/social';
-    @import './layout/smoothies';
-    @import './components/title';
-    @import './layout/about';
-    @import './layout/products';
-    @import './layout/story';
-    @import './layout/testimonials';
-    @import './layout/blog';
-    @import './layout/instagram';
-    @import './layout/footer';
-    @import './components/media';
+@import './abstracts/vars';
+@import './abstracts/mixins';
+@font-face {
+    font-family: "Muli-Regular";
+    src: url(./assets/fonts/Muli-Regular.woff) format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Muli-Bold";
+    src: url(./assets/fonts/Muli-Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Muli-BoldItalic";
+    src: url(./assets/fonts/Muli-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Muli-ExtraBold";
+    src: url(./assets/fonts/Muli-ExtraBold.woff) format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Muli-Italic";
+    src: url(./assets/fonts/Muli-Italic.ttf) format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Muli-Semi-BoldItalic";
+    src: url(./assets/fonts/Muli-Semi-BoldItalic.ttf)format('truetype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@import './components/button';
+@import './layout/header';
+@import './components/menu';
+@import './components/personal';
+@import './components/social';
+@import './layout/smoothies';
+@import './components/title';
+@import './layout/about';
+@import './layout/products';
+@import './layout/story';
+@import './layout/testimonials';
+@import './layout/blog';
+@import './layout/instagram';
+@import './layout/footer';
+@import './components/media';

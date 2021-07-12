@@ -1,63 +1,65 @@
-.blog {
-    &__wrapp {
-        padding: 102px 0 176px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    &__box {
-        position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            width: 687px;
-            height: 12px;
-            background: #f7ae3b;
-            border-radius: 50px;
-            top: 165px;
-            left: 515px;
-            z-index: -1;
+        .blog {
+            &__wrapp {
+                padding: 102px 0 176px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            &__box {
+                position: relative;
+                &::after {
+                    @include pseudo ();
+                    // content: "";
+                    // position: absolute;
+                    width: 687px;
+                    height: 12px;
+                    background: #f7ae3b;
+                    border-radius: 50px;
+                    top: 165px;
+                    left: 515px;
+                    z-index: -1;
+                }
+            }
+            &__title {
+                margin-bottom: 48px;
+            }
+            &__img {
+                max-width: 100%;
+            }
+            &__content {
+                margin-left: 68px;
+                padding: 220px 34px 0 0px;
+            }
+            &__heading {
+                font-size: 30px;
+                color: #f2612d;
+            }
+            &__date {
+                font-size: 16px;
+            }
+            &__text {
+                max-width: 540px;
+                padding: 23px 0 0 58px
+            }
+            &__arrow {
+                position: relative;
+                display: inline-block;
+                &:hover {
+                    transform: scale(1.1);
+                    transition-duration: 500ms;
+                }
+                &::after {
+                    @include pseudo ();
+                    // content: '';
+                    // display: block;
+                    background-image: url(./../images/blog/Arrow.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    // position: absolute;
+                    left: 103px;
+                    bottom: 8px;
+                    width: 30px;
+                    height: 16px;
+                }
+            }
         }
-    }
-    &__title {
-        margin-bottom: 48px;
-    }
-    &__img {
-        max-width: 100%;
-    }
-    &__content {
-        margin-left: 68px;
-        padding: 220px 34px 0 0px;
-    }
-    &__heading {
-        font-size: 30px;
-        color: #f2612d;
-    }
-    &__date {
-        font-size: 16px;
-    }
-    &__text {
-        max-width: 540px;
-        padding: 23px 0 0 58px
-    }
-    &__arrow {
-        position: relative;
-        display: inline-block;
-        &:hover {
-            transform: scale(1.1);
-            transition-duration: 500ms;
-        }
-        &::after {
-            content: '';
-            display: block;
-            background-image: url(./../images/blog/Arrow.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            position: absolute;
-            left: 103px;
-            bottom: 8px;
-            width: 30px;
-            height: 16px;
-        }
-    }
-}

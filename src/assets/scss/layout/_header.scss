@@ -46,13 +46,14 @@
         margin-right: 132px;
         position: relative;
         &::after {
-            content: "";
-            display: block;
+            @include pseudo ();
+            // content: "";
+            // display: block;
             height: 2px;
             width: 47px;
             background-color: white;
             opacity: 0.3;
-            position: absolute;
+            // position: absolute;
             top: 11px;
             left: 203px;
         }
@@ -77,11 +78,12 @@
             transition-duration: 500ms;
         }
         &::after {
-            content: "";
+            @include pseudo ();
+            // content: "";
             background-image: url(./../images/header/Arrow.png);
             background-repeat: no-repeat;
             background-position: bottom;
-            position: absolute;
+            // position: absolute;
             width: 30px;
             height: 16px;
             right: 33px;

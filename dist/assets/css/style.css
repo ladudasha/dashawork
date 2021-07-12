@@ -50,7 +50,7 @@
 }
 
 .btn--green {
-    background-color: green;
+    background-color: #10dbc0;
 }
 
 .header {
@@ -121,11 +121,11 @@
 .header__personal::after {
     content: "";
     display: block;
+    position: absolute;
     height: 2px;
     width: 47px;
     background-color: white;
     opacity: 0.3;
-    position: absolute;
     top: 11px;
     left: 203px;
 }
@@ -159,10 +159,11 @@
 
 .header__btn::after {
     content: "";
+    display: block;
+    position: absolute;
     background-image: url(./../images/header/Arrow.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    position: absolute;
     width: 30px;
     height: 16px;
     right: 33px;
@@ -533,12 +534,12 @@
 }
 
 .products__btn::before {
-    content: '';
+    content: "";
     display: block;
+    position: absolute;
     background-image: url(./../images/products/Arrow-white.png);
     background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
     right: 25px;
     bottom: 20px;
     width: 30px;
@@ -608,12 +609,12 @@
 }
 
 .story__btn::before {
-    content: '';
+    content: "";
     display: block;
+    position: absolute;
     background-image: url(./../images/about/Arrow.png);
     background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
     left: 210px;
     bottom: 21px;
     width: 30px;
@@ -650,8 +651,10 @@
 }
 
 .testimonials__excerpt::before {
-    content: "Sarah A";
+    content: "";
+    display: block;
     position: absolute;
+    content: "Sarah A";
     top: -8px;
     left: -147px;
     font-size: 200px;
@@ -720,8 +723,8 @@
 }
 
 .testimonials__arrow--left:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.3) rotate(180deg);
+    transform: scale(1.3) rotate(180deg);
     transition-duration: 500ms;
 }
 
@@ -745,6 +748,7 @@
 
 .blog__box::after {
     content: "";
+    display: block;
     position: absolute;
     width: 687px;
     height: 12px;
@@ -794,12 +798,12 @@
 }
 
 .blog__arrow::after {
-    content: '';
+    content: "";
     display: block;
+    position: absolute;
     background-image: url(./../images/blog/Arrow.png);
     background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
     left: 103px;
     bottom: 8px;
     width: 30px;
@@ -862,7 +866,7 @@
     width: 20%;
     min-width: 300px;
     position: relative;
-    background: linear-gradient(135deg, rgba(249, 249, 249, 0), rgba(109, 109, 109, 0) 48%);
+    background: linear-gradient(135deg, rgba(254, 254, 254, 0) 80%, rgba(42, 36, 36, 0.412202) 100%);
 }
 
 .instagram__card::after {
@@ -1051,6 +1055,7 @@
 
 .footer__follow-us::before {
     content: "";
+    display: block;
     position: absolute;
     background-image: url(./../images/footer/Arrow.png);
     width: 48px;
