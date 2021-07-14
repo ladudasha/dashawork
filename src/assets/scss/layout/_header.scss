@@ -2,9 +2,9 @@
     background-image: url(./../images/header/big-img.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     position: relative;
-    background-repeat: no-repeat;
     &__top {
         padding-top: 90px;
         margin-bottom: 114px;
@@ -73,10 +73,6 @@
         line-height: 40px;
         position: relative;
         cursor: pointer;
-        &:hover {
-            transform: translate(10px);
-            transition-duration: 500ms;
-        }
         &::after {
             @include pseudo ();
             // content: "";
@@ -88,6 +84,14 @@
             height: 16px;
             right: 33px;
             bottom: 27px;
+        }
+        &:hover {
+            background-color: lighten($accentColor, 10%);
+            transition-duration: 500ms;
+            &::after {
+                transition: all 500ms;
+                transform: translateX(10px);
+            }
         }
     }
     &-heading {

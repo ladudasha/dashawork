@@ -1,9 +1,7 @@
 .about {
     background-color: #127f70;
     &__wrapper {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        @include flex (center, $flex-wrap: wrap);
     }
     &__img {
         max-width: 691px;
@@ -11,8 +9,10 @@
         transform: translateY(63px);
     }
     &__text {
-        margin-left: 142px;
-        margin-right: 138px
+        margin: {
+            left: 142px;
+            right: 138px;
+        }
     }
     &__title {
         color: #ffffff;
@@ -30,6 +30,7 @@
             background-image: url(./../images/about/Line-green.png);
             background-repeat: no-repeat;
             background-size: contain;
+            background-position: center;
             width: 100%;
             height: 100%;
             top: 62px;

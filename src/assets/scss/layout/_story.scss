@@ -58,5 +58,8 @@
             width: 30px;
             height: 16px;
         }
+        &:hover {
+            background-color: lighten($accentColor, 10%)
+        }
     }
 }

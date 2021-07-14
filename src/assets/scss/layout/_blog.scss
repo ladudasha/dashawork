@@ -1,9 +1,7 @@
         .blog {
             &__wrapp {
                 padding: 102px 0 176px;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
+                @include flex (center, $flex-wrap: wrap);
             }
             &__box {
                 position: relative;

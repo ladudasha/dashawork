@@ -4,11 +4,9 @@
         overflow-x: scroll;
     }
     &__box {
-        display: flex;
+        @include flex ($align-items: center, $flex-direction: column);
         width: 480px;
         min-width: 465px;
-        align-items: center;
-        flex-direction: column;
         flex-grow: 1;
         padding: 125px 0px 80px;
     }

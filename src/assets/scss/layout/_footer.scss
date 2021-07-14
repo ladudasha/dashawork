@@ -8,9 +8,8 @@
         line-height: 37px;
     }
     &__content {
-        display: flex;
+        @include flex (center, $flex-wrap: wrap);
         padding: 75px 0 101px 0;
-        flex-wrap: wrap;
     }
     &__logo {
         margin-top: 62px;
