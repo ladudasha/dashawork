@@ -1,11 +1,3 @@
-function test(a, b) {
-    return a + b
-}
-
-console.log(test(5, 2));
-console.log(test(2, 4));
-console.log(test(9, 1));
-
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['module', 'exports'], factory);
@@ -542,5 +534,3 @@ console.log(test(9, 1));
   exports.default = WOW;
   module.exports = exports['default'];
 });
-
-//# sourceMappingURL=script.js.map
