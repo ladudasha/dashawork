@@ -12,9 +12,10 @@
         right: 42px
     }
     &__excerpt {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex ( center, center);
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         position: relative;
         max-width: 734px;
         margin: 0 auto;

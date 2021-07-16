@@ -9,9 +9,10 @@
         }
     }
     &__counter {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex (center, center);
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         border-radius: 50%;
         position: absolute;
         left: 21px;

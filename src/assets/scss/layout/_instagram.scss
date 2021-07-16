@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     &__title {
+        @include flex (center, center);
         font-family: "Muli-ExtraBold";
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         margin-bottom: 41px;
         font-size: 24px;
         line-height: 40px;
