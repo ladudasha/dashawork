@@ -493,8 +493,8 @@ template {
 .header__right-block {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .header__personal {
@@ -801,8 +801,8 @@ template {
 .about__img {
     max-width: 691px;
     width: 100%;
-    -webkit-transform: translateY(63px);
-    transform: translateY(63px);
+    position: relative;
+    top: 63px;
 }
 
 .about__text {
@@ -869,18 +869,18 @@ template {
 }
 
 .about__btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
     border: 2px solid #f8b231;
     background: #127f70;
     text-decoration: none;
     width: 100%;
     max-width: 380px;
     height: 60px;
-    display: -ms-flexbox;
-    display: flex;
     font-size: 21px;
     line-height: 22px;
-    -ms-flex-align: center;
-    align-items: center;
     padding: 0 0 0 20px;
     position: relative;
     margin-bottom: 50px;
@@ -1363,11 +1363,11 @@ template {
 }
 
 .footer__pay {
-    width: 23%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 23%;
     margin-right: 10px;
 }
 
@@ -1380,14 +1380,14 @@ template {
 }
 
 .footer__pay-list {
-    max-width: 247px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 6px;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 247px;
+    gap: 6px;
 }
 
 .footer__pay-item {
@@ -1395,11 +1395,11 @@ template {
 }
 
 .footer__block {
-    width: 28%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 28%;
 }
 
 .footer__block-heading {
@@ -1515,14 +1515,14 @@ template {
 }
 
 .footer__row {
-    height: 60px;
-    background: #6d450c;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
+    height: 60px;
+    background: #6d450c;
     position: relative;
 }
 
