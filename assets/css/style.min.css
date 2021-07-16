@@ -438,8 +438,6 @@ template {
       opacity: 0.3;
       top: 11px;
       left: 203px; }
-  .header__social {
-    width: 123px; }
   .header__content {
     display: flex;
     justify-content: center; }

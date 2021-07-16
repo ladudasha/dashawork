@@ -106,7 +106,7 @@
     <section class="smoothies">
         <div class="container">
 
-            <h2 class="smoothies__title title">What are these smoothies?</h2>
+            <h2 data-wow-offset="500" class="wow animated flipInX  smoothies__title title">What are these smoothies?</h2>
             <p class="smoothies__text text">A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes dairy products (milk, yogurt, ice-cream or cottage cheese), typically using a blender. Smoothies may be made using other ingredients, such as water, crushed ice, fruit
                 juice, sweeteners (e.g. honey, sugar, stevia, or syrup), whey powder, plant milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or nutritional supplements.</p>
 
@@ -151,7 +151,7 @@
         <div class="container">
             <div class="about__wrapper">
 
-                <img class="about__img" src="./assets/images/about/Img.png" alt="bottles">
+                <img data-tilt data-tilt-reverse="true" class="about__img " src="./assets/images/about/Img.png" alt="bottles">
 
                 <div class="about__text ">
                     <h2 class="about__title title">What makes Smoothie an <span class="about__title-green">awesome
@@ -178,25 +178,25 @@
         <div class="products__wrapper">
             <div class="products__box products__box--red ">
                 <img class="products__img" src="./assets/images/products/Img1.png" alt="bottlebrown">
-                <h3 class="products__heading">Dark Chocolate Smoothie<br><i class="products__italik">100 ml</i> </h3>
+                <h3 data-wow-offset="400" class="wow animated pulse products__heading">Dark Chocolate Smoothie<br><i class="products__italik">100 ml</i> </h3>
                 <a class="products__btn btn btn--white" href="#">Buy</a>
             </div>
 
             <div class="products__box products__box--green">
                 <img class="products__img" src="./assets/images/products/Imggreen.png" alt="bottlegreen">
-                <h3 class="products__heading">Vegan Lettuce Smoothie<br><i class="products__italik">100 ml</i> </h3>
+                <h3 data-wow-offset="400" class="wow animated pulse products__heading">Vegan Lettuce Smoothie<br><i class="products__italik">100 ml</i> </h3>
                 <a class="products__btn btn btn--white" href="#">Buy</a>
             </div>
 
             <div class="products__box products__box--yellow">
                 <img class="products__img" src="./assets/images/products/Imglemon.png" alt="bottleyellow">
-                <h3 class="products__heading">Lemon Ginger Smoothie<br><i class="products__italik">100 ml</i> </h3>
+                <h3 data-wow-offset="400" class="wow animated pulse products__heading">Lemon Ginger Smoothie<br><i class="products__italik">100 ml</i> </h3>
                 <a class="products__btn btn btn--white" href="#">Buy</a>
             </div>
 
             <div class="products__box products__box--orange">
                 <img class="products__img" src="./assets/images/products/Imgred.png" alt="bottlered">
-                <h3 class="products__heading">Turmeric Garlic Smoothie<br><i class="products__italik">100 ml</i> </h3>
+                <h3 data-wow-offset="400" class="wow animated pulse products__heading">Turmeric Garlic Smoothie<br><i class="products__italik">100 ml</i> </h3>
                 <a class="products__btn btn btn--white" href="#">Buy</a>
             </div>
         </div>
@@ -221,7 +221,7 @@
 
     <section class="testimonials">
 
-        <h2 class="testimonials__title title ">Why clients <span class="testimonials__love">LOVE</span> us?</h2>
+        <h2 data-wow-offset="400" class="wow animated fadeInDown testimonials__title title ">Why clients <span class="testimonials__love">LOVE</span> us?</h2>
 
         <article class="testimonials__excerpt">
             <div class="testimonials__wrap">
@@ -242,12 +242,12 @@
     <section class="blog">
         <div class="container">
             <div class="blog__wrapp">
-                <div class="blog__box">
+                <div data-wow-offset="300" class="wow animated fadeInLeftBig blog__box">
                     <h2 class="blog__title title">Our blog</h2>
-                    <img class="blog__img" src="./assets/images/blog/Img.jpg" alt="pudding">
+                    <img class=" blog__img" src="./assets/images/blog/Img.jpg" alt="pudding">
                 </div>
 
-                <div class="blog__content">
+                <div data-wow-offset="300" class="wow animated fadeInRightBig blog__content">
                     <h3 class="blog__heading">ASAFOETIDA - THE NEXT TURMERIC?</h3>
                     <time class="blog__date" datetime="2020-06-16">Jun 16, 2020</time>
                     <p class="blog__text text">
@@ -263,8 +263,8 @@
 
 
 
-        <h2 class="instagram__title title">
-            <a class="instagram__link" href="">ashasuperfoods</a></h2>
+        <h2 class=" instagram__title title">
+            <a class=" instagram__link" href="">ashasuperfoods</a></h2>
 
 
         <div class="instagram__wrapper">
@@ -374,7 +374,7 @@
                         <input type="hidden" class="footer__form-btn"></input>
                     </form>
                     <div class="footer__box-small">
-                        <button class="footer__follow-us"> follow us </button>
+                        <button class=" footer__follow-us"> follow us </button>
                         <div class="footer__social">
                             <ul class="footer__social-list">
 
@@ -416,6 +416,7 @@
     <script>
         new WOW().init();
     </script>
+    <script src="vanilla-tilt.js"></script>
 
 </body>
 
