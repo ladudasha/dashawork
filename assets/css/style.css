@@ -731,11 +731,11 @@ template {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
     max-width: 980px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
     margin: 0 auto;
     -ms-flex: 1 0 25%;
     flex: 1 0 25%;
@@ -982,14 +982,14 @@ template {
 .story__wrapper {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 106px;
-    padding-bottom: 150px;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    padding-top: 106px;
+    padding-bottom: 150px;
 }
 
 .story__content {
@@ -1073,10 +1073,10 @@ template {
 .testimonials__excerpt {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
     max-width: 734px;
     margin: 0 auto;
@@ -1250,13 +1250,13 @@ template {
 }
 
 .instagram__title {
-    font-family: "Muli-ExtraBold";
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
+    font-family: "Muli-ExtraBold";
     margin-bottom: 41px;
     font-size: 24px;
     line-height: 40px;
