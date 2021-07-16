@@ -28,7 +28,10 @@
     "IE 10"
   ],
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "tilt.js": "^1.2.1",
+    "vanilla-tilt": "^1.7.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

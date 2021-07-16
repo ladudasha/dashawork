@@ -632,7 +632,8 @@ template {
   .about__img {
     max-width: 691px;
     width: 100%;
-    transform: translateY(63px); }
+    position: relative;
+    top: 63px; }
   .about__text {
     margin-left: 142px;
     margin-right: 138px; }

@@ -514,10 +514,6 @@ template {
     left: 203px;
 }
 
-.header__social {
-    width: 123px;
-}
-
 .header__content {
     display: -ms-flexbox;
     display: flex;
