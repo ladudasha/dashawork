@@ -11,9 +11,10 @@
         position: relative;
     }
     &__navigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex (space-between, center);
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
         position: relative;
     }
     &__logo {
@@ -39,8 +40,9 @@
         }
     }
     &__right-block {
-        display: flex;
-        align-items: center;
+        @include flex (center);
+        // display: flex;
+        // align-items: center;
     }
     &__personal {
         margin-right: 132px;
@@ -62,8 +64,9 @@
     //     width: 123px;
     // }
     &__content {
-        display: flex;
-        justify-content: center;
+        @include flex ( center);
+        // display: flex;
+        // justify-content: center;
     }
     &__btn {
         padding-right: 87px;
