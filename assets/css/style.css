@@ -438,10 +438,11 @@ template {
 }
 
 .header {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url(./../images/header/big-img.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
     position: relative;
 }
@@ -532,12 +533,13 @@ template {
 }
 
 .header__btn::after {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     content: "";
     display: block;
     position: absolute;
     background-image: url(./../images/header/Arrow.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
     width: 30px;
     height: 16px;
     right: 33px;
@@ -607,14 +609,14 @@ template {
 }
 
 .menu__list {
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #ffffff;
-    line-height: 40px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 40px;
 }
 
 .menu__item {
@@ -653,10 +655,10 @@ template {
 .personal__counter {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
     border-radius: 50%;
     position: absolute;
     left: 21px;
@@ -824,12 +826,13 @@ template {
 }
 
 .about__title-green::after {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     content: "";
     position: absolute;
     background-image: url(./../images/about/Line-green.png);
-    background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
     width: 100%;
     height: 100%;
     top: 62px;
@@ -851,11 +854,11 @@ template {
 }
 
 .about-item::after {
-    content: '';
     display: block;
-    background-image: url(./../images/about/1.png);
     background-repeat: no-repeat;
     background-position: center;
+    content: '';
+    background-image: url(./../images/about/1.png);
     position: absolute;
     left: -35px;
     bottom: 0px;
@@ -887,11 +890,11 @@ template {
 }
 
 .about__btn::before {
-    content: '';
     display: block;
-    background-image: url(./../images/about/Arrow.png);
     background-repeat: no-repeat;
     background-position: center;
+    content: '';
+    background-image: url(./../images/about/Arrow.png);
     position: absolute;
     right: 7%;
     bottom: 20px;
@@ -963,12 +966,13 @@ template {
 }
 
 .products__btn::before {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     content: "";
     display: block;
     position: absolute;
     background-image: url(./../images/products/Arrow-white.png);
-    background-repeat: no-repeat;
-    background-position: center;
     right: 25px;
     bottom: 20px;
     width: 30px;
@@ -1011,6 +1015,9 @@ template {
 }
 
 .story__pic::after {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     content: "";
     position: absolute;
     background-image: url(./../images/story/Stamp.png);
@@ -1018,8 +1025,6 @@ template {
     height: 216px;
     top: 15px;
     left: -184px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .story__img {
@@ -1038,12 +1043,13 @@ template {
 }
 
 .story__btn::before {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     content: "";
     display: block;
     position: absolute;
     background-image: url(./../images/about/Arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
     left: 210px;
     bottom: 21px;
     width: 30px;
@@ -1230,12 +1236,13 @@ template {
 }
 
 .blog__arrow::after {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     content: "";
     display: block;
     position: absolute;
     background-image: url(./../images/blog/Arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
     left: 103px;
     bottom: 8px;
     width: 30px;
@@ -1274,13 +1281,14 @@ template {
 }
 
 .instagram__link::before {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     content: "";
     position: absolute;
     background-image: url(./../images/instagram/Icon.png);
     width: 26px;
     height: 26px;
-    background-position: center;
-    background-repeat: no-repeat;
     top: 7px;
     left: -38px;
 }
@@ -1302,11 +1310,12 @@ template {
 }
 
 .instagram__card::after {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     content: "";
     position: absolute;
     background-image: url(./../images/instagram/Iconwite.png);
-    background-position: center center;
-    background-repeat: no-repeat;
     bottom: 15px;
     right: 20px;
     width: 26px;
@@ -1419,6 +1428,9 @@ template {
 }
 
 .footer__block-form::before {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     content: " ";
     position: absolute;
     background-image: url(./../images/footer/Icon.png);
@@ -1426,7 +1438,6 @@ template {
     left: 21px;
     width: 24px;
     height: 19px;
-    background-position: center;
     z-index: 1;
 }
 
@@ -1488,13 +1499,15 @@ template {
 }
 
 .footer__follow-us::before {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     content: "";
     display: block;
     position: absolute;
     background-image: url(./../images/footer/Arrow.png);
     width: 48px;
     height: 43px;
-    background-position: center;
     top: 25%;
     left: 5%;
     -webkit-transform: translateY(-50%);
@@ -1535,6 +1548,9 @@ template {
 }
 
 .footer__btn-top {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 50px;
     height: 50px;
     border-radius: 5px;
@@ -1543,8 +1559,6 @@ template {
     right: 82px;
     bottom: 38px;
     background-image: url(./../images/footer/Iconup.png);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .footer__btn-top::after {
