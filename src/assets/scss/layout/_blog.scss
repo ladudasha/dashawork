@@ -7,8 +7,6 @@
                 position: relative;
                 &::after {
                     @include pseudo ();
-                    // content: "";
-                    // position: absolute;
                     width: 687px;
                     height: 12px;
                     background: #f7ae3b;
@@ -47,13 +45,9 @@
                     transition-duration: 500ms;
                 }
                 &::after {
+                    @include background ();
                     @include pseudo ();
-                    // content: '';
-                    // display: block;
                     background-image: url(./../images/blog/Arrow.png);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    // position: absolute;
                     left: 103px;
                     bottom: 8px;
                     width: 30px;

@@ -26,12 +26,11 @@
         color: #cae941;
         position: relative;
         &::after {
+            @include background ();
             content: "";
             position: absolute;
             background-image: url(./../images/about/Line-green.png);
-            background-repeat: no-repeat;
             background-size: contain;
-            background-position: center;
             width: 100%;
             height: 100%;
             top: 62px;
@@ -41,8 +40,10 @@
     &__list {
         font-size: 20px;
         line-height: 22px;
-        margin-top: 58px;
-        margin-bottom: 61px;
+        margin: {
+            top: 58px;
+            bottom: 61px;
+        }
     }
     &-item {
         margin-bottom: 19px;
@@ -50,11 +51,9 @@
         position: relative;
         margin-left: 42px;
         &::after {
+            @include background ();
             content: '';
-            display: block;
             background-image: url(./../images/about/1.png);
-            background-repeat: no-repeat;
-            background-position: center;
             position: absolute;
             left: -35px;
             bottom: 0px;
@@ -74,19 +73,15 @@
         width: 100%;
         max-width: 380px;
         height: 60px;
-        // display: flex;
         font-size: 21px;
         line-height: 22px;
-        // align-items: center;
         padding: 0 0 0 20px;
         position: relative;
         margin-bottom: 50px;
         &::before {
+            @include background ();
             content: '';
-            display: block;
             background-image: url(./../images/about/Arrow.png);
-            background-repeat: no-repeat;
-            background-position: center;
             position: absolute;
             right: 7%;
             bottom: 20px;

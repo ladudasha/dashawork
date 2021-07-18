@@ -17,20 +17,13 @@
     }
     &__wrapper {
         @include flex (center, center);
-        // display: flex;
-        // justify-content: center;
         max-width: 980px;
         flex-wrap: wrap;
-        // align-items: center;
         margin: 0 auto;
         flex: 1 0 25%;
     }
     &__card {
         @include flex (flex-end, center, $flex-direction: column);
-        // display: flex;
-        // justify-content: flex-end;
-        // align-items: center;
-        // flex-direction: column;
         width: 25%;
         height: 180px;
         padding: 0 0 27px 0;

@@ -1,8 +1,7 @@
 .header {
+    @include background ();
     background-image: url(./../images/header/big-img.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
     position: relative;
     &__top {
@@ -12,9 +11,6 @@
     }
     &__navigation {
         @include flex (space-between, center);
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
         position: relative;
     }
     &__logo {
@@ -41,32 +37,22 @@
     }
     &__right-block {
         @include flex (center);
-        // display: flex;
-        // align-items: center;
     }
     &__personal {
         margin-right: 132px;
         position: relative;
         &::after {
             @include pseudo ();
-            // content: "";
-            // display: block;
             height: 2px;
             width: 47px;
             background-color: white;
             opacity: 0.3;
-            // position: absolute;
             top: 11px;
             left: 203px;
         }
     }
-    // &__social {
-    //     width: 123px;
-    // }
     &__content {
         @include flex ( center);
-        // display: flex;
-        // justify-content: center;
     }
     &__btn {
         padding-right: 87px;
@@ -77,12 +63,9 @@
         position: relative;
         cursor: pointer;
         &::after {
+            @include background ();
             @include pseudo ();
-            // content: "";
             background-image: url(./../images/header/Arrow.png);
-            background-repeat: no-repeat;
-            background-position: bottom;
-            // position: absolute;
             width: 30px;
             height: 16px;
             right: 33px;

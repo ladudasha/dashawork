@@ -4,9 +4,6 @@
     &__title {
         @include flex (center, center);
         font-family: "Muli-ExtraBold";
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         margin-bottom: 41px;
         font-size: 24px;
         line-height: 40px;
@@ -21,13 +18,12 @@
         font-family: "Muli-Bold", sans-serif;
         position: relative;
         &::before {
+            @include background ();
             content: "";
             position: absolute;
             background-image: url(./../images/instagram/Icon.png);
             width: 26px;
             height: 26px;
-            background-position: center;
-            background-repeat: no-repeat;
             top: 7px;
             left: -38px;
         }
@@ -44,11 +40,10 @@
         position: relative;
         background: linear-gradient(135deg, rgba(254, 254, 254, 0) 80%, rgba(42, 36, 36, 0.41220238095238093) 100%);
         &::after {
+            @include background ();
             content: "";
             position: absolute;
             background-image: url(./../images/instagram/Iconwite.png);
-            background-position: center center;
-            background-repeat: no-repeat;
             bottom: 15px;
             right: 20px;
             width: 26px;

@@ -11,3 +11,9 @@
     flex-wrap: $flex-wrap;
     flex-direction: $flex-direction;
 }
+
+@mixin background ($display: null) {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+}

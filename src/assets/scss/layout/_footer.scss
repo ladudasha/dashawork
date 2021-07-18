@@ -30,8 +30,6 @@
     &__pay {
         @include flex ($flex-direction: column);
         width: 23%;
-        // display: flex;
-        // flex-direction: column;
         margin-right: 10px;
         &-heading {
             color: white;
@@ -43,10 +41,7 @@
         &-list {
             @include flex ($align-items: center, $flex-wrap: wrap);
             max-width: 247px;
-            // display: flex;
-            // flex-wrap: wrap;
             gap: 6px;
-            // align-items: center;
         }
         &-item {
             margin-right: 10px;
@@ -55,8 +50,6 @@
     &__block {
         @include flex ($flex-direction: column);
         width: 28%;
-        // display: flex;
-        // flex-direction: column;
         &-heading {
             color: white;
             font-size: 26px;
@@ -66,10 +59,9 @@
         }
         &-form {
             @include flex ($align-items: center);
-            // display: flex;
-            // align-items: center;
             position: relative;
             &::before {
+                @include background ();
                 content: " ";
                 position: absolute;
                 background-image: url(./../images/footer/Icon.png);
@@ -77,7 +69,6 @@
                 left: 21px;
                 width: 24px;
                 height: 19px;
-                background-position: center;
                 z-index: 1;
             }
         }
@@ -118,13 +109,11 @@
         margin-right: 41px;
         position: relative;
         &::before {
+            @include background ();
             @include pseudo ();
-            // content: "";
-            // position: absolute;
             background-image: url(./../images/footer/Arrow.png);
             width: 48px;
             height: 43px;
-            background-position: center;
             top: 25%;
             left: 5%;
             transform: translateY(-50%);
@@ -143,9 +132,6 @@
         @include flex (center, center, );
         height: 60px;
         background: #6d450c;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         position: relative;
     }
     &__center-text {
@@ -156,6 +142,7 @@
         text-align: center;
     }
     &__btn-top {
+        @include background ();
         width: 50px;
         height: 50px;
         border-radius: 5px;
@@ -164,8 +151,6 @@
         right: 82px;
         bottom: 38px;
         background-image: url(./../images/footer/Iconup.png);
-        background-repeat: no-repeat;
-        background-position: center;
         &::after {
             content: "Go top";
             color: white;

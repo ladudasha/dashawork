@@ -45,13 +45,9 @@
             transition-duration: 500ms;
         }
         &::before {
+            @include background ();
             @include pseudo ();
-            // content: '';
-            // display: block;
             background-image: url(./../images/products/Arrow-white.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            // position: absolute;
             right: 25px;
             bottom: 20px;
             width: 30px;
