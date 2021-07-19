@@ -62,7 +62,7 @@
         width: 41px;
         height: 16px;
         background-color: transparent;
-        margin-right: 90px;
+        // margin-right: 90px;
         background-repeat: no-repeat;
         cursor: pointer;
         border: none;
@@ -79,6 +79,9 @@
         }
     }
     &__controls {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
     }
 }
