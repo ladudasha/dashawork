@@ -1143,7 +1143,6 @@ template {
     width: 41px;
     height: 16px;
     background-color: transparent;
-    margin-right: 90px;
     background-repeat: no-repeat;
     cursor: pointer;
     border: none;
@@ -1167,7 +1166,13 @@ template {
 }
 
 .testimonials__controls {
-    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 60px;
 }
 
 .blog__wrapp {
