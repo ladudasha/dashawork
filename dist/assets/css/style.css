@@ -482,6 +482,7 @@ template {
     top: 50px;
     right: 25px;
     display: none;
+    cursor: pointer;
 }
 
 .header__burger-btn-icon {
@@ -515,6 +516,12 @@ template {
     left: 203px;
 }
 
+@media screen and (max-width: 1400px) {
+    .header__personal::after {
+        display: none;
+    }
+}
+
 .header__burger {
     background-color: green;
     width: 330px;
@@ -522,7 +529,7 @@ template {
     padding: 50px;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -420px;
     z-index: 999;
     transition: .3s;
 }
@@ -1639,17 +1646,6 @@ template {
 .burger__personal {
     margin-right: 0;
     position: static;
-}
-
-.burger__close {
-    background: url(./../images/header/close_111152.svg) no-repeat center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    fill: white;
 }
 
 /*!
@@ -4337,19 +4333,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .header__logo {
         top: 66px;
-    }
-
-    .header__right-block {
-        margin-bottom: 100px;
-    }
-
-    .menu__list {
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
-    .menu__item {
-        margin: 0 0 50px;
     }
 
     .header-heading {
