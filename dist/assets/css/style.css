@@ -515,6 +515,22 @@ template {
     left: 203px;
 }
 
+.header__burger {
+    background-color: green;
+    width: 330px;
+    height: 700px;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transition: .3s;
+}
+
+.header__burger-active {
+    right: 0;
+}
+
 .header__content {
     display: -ms-flexbox;
     display: flex;
@@ -801,7 +817,7 @@ template {
 }
 
 .about__img {
-    max-width: 691px;
+    max-width: 695px;
     width: 100%;
     position: relative;
     top: 63px;
@@ -1577,6 +1593,63 @@ template {
     top: 38px;
     display: block;
     width: 55px;
+}
+
+.burger {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.burger__menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.burger__list {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.burger__item {
+    margin-right: 0px;
+}
+
+.burger__right-block {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.burger__personal {
+    margin-right: 0;
+    position: static;
+}
+
+.burger__close {
+    background: url(./../images/header/close_111152.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    fill: white;
 }
 
 /*!
@@ -4150,18 +4223,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media screen and (max-width: 1400px) {
     .header__navigation {
         display: none;
-        position: fixed;
-        background-color: green;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+    }
+
+    .header__burger-btn {
+        display: block;
         z-index: 9999999;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        padding-top: 150px;
     }
 }
 
@@ -4284,11 +4350,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .menu__item {
         margin: 0 0 50px;
-    }
-
-    .header__burger-btn {
-        display: block;
-        z-index: 9999999;
     }
 
     .header-heading {

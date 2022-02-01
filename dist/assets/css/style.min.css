@@ -417,7 +417,8 @@ template {
     position: fixed;
     top: 50px;
     right: 25px;
-    display: none; }
+    display: none;
+    cursor: pointer; }
     .header__burger-btn-icon {
       width: 50px;
       position: fixed;
@@ -439,6 +440,21 @@ template {
       opacity: 0.3;
       top: 11px;
       left: 203px; }
+      @media screen and (max-width: 1400px) {
+        .header__personal::after {
+          display: none; } }
+  .header__burger {
+    background-color: green;
+    width: 330px;
+    height: 700px;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    right: -420px;
+    z-index: 999;
+    transition: .3s; }
+    .header__burger-active {
+      right: 0; }
   .header__content {
     display: flex;
     justify-content: center; }
@@ -1176,6 +1192,30 @@ template {
       top: 38px;
       display: block;
       width: 55px; }
+
+.burger {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; }
+  .burger__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .burger__list {
+    flex-direction: column;
+    gap: 10px; }
+  .burger__item {
+    margin-right: 0px; }
+  .burger__right-block {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; }
+  .burger__personal {
+    margin-right: 0;
+    position: static; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -3210,17 +3250,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media screen and (max-width: 1400px) {
   .header__navigation {
-    display: none;
-    position: fixed;
-    background-color: green;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 9999999;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    padding-top: 150px; } }
+    display: none; }
+  .header__burger-btn {
+    display: block;
+    z-index: 9999999; } }
 
 @media screen and (max-width: 1336px) {
   .story__pic::after {
@@ -3285,15 +3318,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     line-height: 40px; }
   .header__logo {
     top: 66px; }
-  .header__right-block {
-    margin-bottom: 100px; }
-  .menu__list {
-    flex-direction: column; }
-  .menu__item {
-    margin: 0 0 50px; }
-  .header__burger-btn {
-    display: block;
-    z-index: 9999999; }
   .header-heading {
     font-size: 65px; }
   .smoothies {

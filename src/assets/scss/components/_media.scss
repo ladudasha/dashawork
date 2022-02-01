@@ -19,17 +19,12 @@
 @media screen and (max-width: 1400px) {
     .header__navigation {
         display: none;
-        position: fixed;
-        background-color: green;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 9999999;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        padding-top: 150px;
     }
+    .header__burger-btn {
+        display: block;
+        z-index: 9999999;
+    }
+
 }
 
 @media screen and (max-width: 1336px) {
@@ -119,20 +114,7 @@
     }
     .header__logo {
         top: 66px;
-    }
-    .header__right-block {
-        margin-bottom: 100px;
-    }
-    .menu__list {
-        flex-direction: column;
-    }
-    .menu__item {
-        margin: 0 0 50px;
-    }
-    .header__burger-btn {
-        display: block;
-        z-index: 9999999;
-    }
+    }    
     .header-heading {
         font-size: 65px;
     }

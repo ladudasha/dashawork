@@ -28,11 +28,13 @@
         top: 50px;
         right: 25px;
         display: none;
+        cursor: pointer;
         &-icon {
             width: 50px;
             position: fixed;
             top: 50px;
             right: 25px;
+            
         }
     }
     &__right-block {
@@ -49,7 +51,25 @@
             opacity: 0.3;
             top: 11px;
             left: 203px;
+            @media screen and (max-width: 1400px) {
+                display: none;
+
+            }
         }
+    }
+    &__burger {
+        background-color:green;
+        width: 330px;
+        height: 700px;
+        padding: 50px;
+        position: fixed;           
+        top: 0;
+        right: -420px;
+        z-index: 999;
+        transition: .3s;
+        &-active {
+                right: 0;
+            }
     }
     &__content {
         @include flex ( center);
