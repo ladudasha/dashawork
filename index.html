@@ -17,6 +17,7 @@
     <header class="header">
         <div class="container">
             <div class="header__top" id="go-top">
+<!-- navigation -->
                 <div class="header__navigation">
                     <nav class="header__menu menu">
                         <ul class="menu__list">
@@ -56,7 +57,7 @@
                                 <li class="personal__list-item">
                                     <a class="personal__link" href=" ">
                                         <img class="personal__img" src=" ./assets/images/header/Cart-icon.png" alt="icon">
-                                        <span class="personal__counter">o</span>
+                                        <span class="personal__counter">0</span>
                                     </a>
                                 </li>
                             </ul>
@@ -93,16 +94,94 @@
 
 
             </div>
-            <button class="header__burger-btn">
-                <img class="header__burger-btn-icon" src="./assets/images/header/menu.svg" alt="">
+<!--кнопка бургер  -->
+            <button class="header__burger-btn" id="header__burger-btn">
+                <img class="header__burger-btn-icon" id="header__burger-btn-icon" src="./assets/images/header/menu.svg" alt="">
             </button>
+
+
+<!-- бургер меню -->
+<div class="header__burger burger" id="header__burger">
+<!-- 1block -->
+    <nav class="burger__menu menu" id="burger__menu">
+        <ul class="menu__list burger__list">
+            <li class="menu__item burger__item">
+                <a class="menu-link" href="#">Home</a>
+            </li>
+            <li class="menu__item burger__item">
+                <a class="menu-link" href="#">Shop</a>
+            </li>
+            <li class="menu__item burger__item">
+                <a class="menu-link" href="#">Story</a>
+            </li>
+            <li class="menu__item burger__item">
+                <a class="menu-link" href="#">About</a>
+            </li>
+            <li class="menu__item burger__item">
+                <a class="menu-link" href="#">Blog</a>
+            </li>
+            <li class="menu__item burger__item">
+                <a class="menu-link" href="#">Testimonials</a>
+            </li>
+        </ul>
+    </nav>
+<!-- 2block -->
+    <div class="header__right-block burger__right-block">
+        <div class="header__personal burger__personal personal">
+            <ul class="personal__list">
+                <li class="personal__list-item">
+                    <a class="personal__link" href=" ">
+                        <img class="personal__img" src="./assets/images/header/Search-icon.png " alt="icon">
+                    </a>
+                </li>
+                <li class="personal__list-item">
+                    <a class="personal__link" href=" ">
+                        <img class="personal__img" src="./assets/images/header/User-icon.png " alt="icon">
+                    </a>
+                </li>
+                <li class="personal__list-item">
+                    <a class="personal__link" href=" ">
+                        <img class="personal__img" src=" ./assets/images/header/Cart-icon.png" alt="icon">
+                        <span class="personal__counter">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header__social social">
+            <ul class="social__list">
+                <li class="social__list-item">
+                    <a class="social__link" href=" ">
+                        <img class="social__img" src="./assets/images/header/Facebook-icon.png " alt="fb">
+                    </a>
+                </li>
+                <li class="social__list-item">
+                    <a class="social__link" href=" ">
+                        <img class="social__img" src="./assets/images/header/Pinterest-icon.png " alt="pinterest">
+                    </a>
+                </li>
+                <li class="social__list-item">
+                    <a class="social__link" href=" ">
+                        <img class="social__img" src="./assets/images/header/Instagram-icon.png " alt="insta">
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+
+
 
             <div class="header__content"><button class="wow animated fadeInLeftBig header__btn btn btn--green">Shop Now</button>
             </div>
             <h1 class="tracking-in-contract-bck header-heading">Smoothies</h1>
         </div>
     </header>
-
+<!-- SMOOTHIES -->
     <section class="smoothies">
         <div class="container">
 
@@ -146,7 +225,7 @@
             </div>
         </div>
     </section>
-
+<!-- ABOUT -->
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
@@ -258,14 +337,11 @@
             </div>
         </div>
     </section>
-
+    
+<!-- INSTAGRAM -->
     <section class="instagram">
-
-
-
         <h2 class=" instagram__title title">
             <a class=" instagram__link" href="">ashasuperfoods</a></h2>
-
 
         <div class="instagram__wrapper">
 
@@ -293,6 +369,7 @@
 
     </section>
 
+<!-- FOOTER -->
     <section class="footer">
         <div class="container">
             <div class="footer__content">
@@ -408,15 +485,17 @@
         <div class="footer__row">
             <small class="footer__center-text">© 2020. All Rights Reserved.
             </small>
-            <a class="footer__btn-top" href="#go-top"></a>
+            <a class="footer__btn-top" id="footer__btn-top" href="#go-top"></a>
         </div>
 
     </section>
+    <script src="./assets/js/vanilla-tilt.js"></script>
     <script src="./assets/js/script.js"></script>
     <script>
         new WOW().init();
     </script>
-    <script src="./assets/js/vanilla-tilt.js"></script>
+    
+   
 
 </body>
 
