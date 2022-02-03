@@ -44,7 +44,7 @@
         &::before {
             @include background ();
             @include pseudo ();
-            background-image: url(./../images/about/Arrow.png);
+            background-image: url(./../images/blog/Arrow.png);
             left: 210px;
             bottom: 21px;
             width: 30px;

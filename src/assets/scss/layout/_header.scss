@@ -1,4 +1,5 @@
 .header {
+    z-index: 10;
     @include background ();
     background-image: url(./../images/header/big-img.jpg);
     background-size: cover;
