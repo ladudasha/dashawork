@@ -917,7 +917,7 @@ template {
     background-repeat: no-repeat;
     background-position: center;
     content: '';
-    background-image: url(./../images/about/Arrow.png);
+    background-image: url(../images/blog/Arrow.png);
     position: absolute;
     right: 7%;
     bottom: 20px;
@@ -1072,7 +1072,7 @@ template {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(./../images/about/Arrow.png);
+    background-image: url(../images/blog/Arrow.png);
     left: 210px;
     bottom: 21px;
     width: 30px;

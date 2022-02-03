@@ -39,15 +39,15 @@ burgerMenu()
 
 //   // кнопка go top
 
-// let goTop = document.querySelector('.footer__btn-top')
+let goTop = document.querySelector('.footer__btn-top')
 
-// window.addEventListener("scroll", function () {
-//   if (window.scrollY > 400) {
-//     goTop.style.opacity = 1
-//   } else {
-//     goTop.style.opacity = 0
-//   }
-// })
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 400) {
+    goTop.style.opacity = 1
+  } else {
+    goTop.style.opacity = 0
+  }
+})
 
 
 (function (global, factory) {
